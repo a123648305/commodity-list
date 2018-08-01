@@ -31,15 +31,16 @@
         <ul class="tab-list">
             <li>营业收入</li>
             <li>售卡分成</li>
-            <li>消费佣金收入
+            <li>消费佣金收入</li>
+            <li>消费佣金支出
                 <div class="line"></div>
             </li>
-            <li>消费佣金支出</li>
         </ul>
         <div class="container">
             <!--<operating-incom></operating-incom>-->
             <!--<sale-card></sale-card>-->
-            <commission-income></commission-income>
+            <!--<commission-income></commission-income>-->
+            <commission-expenditure></commission-expenditure>
         </div>
     </div>
 </template>
@@ -48,8 +49,9 @@
 import operatingIncom from './operatingIncom'
 import saleCard from './saleCard'
 import commissionIncome from './commissionIncome'
+import commissionExpenditure from './commissionExpenditure'
 export default {
-    components: { operatingIncom, saleCard, commissionIncome },
+    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure },
     data() {
         return {
 
