@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './assets/iconfont/iconfont.css'
 import 'normalize.css'
 import './assets/css/reset.less'
 // import 'lib-flexible/flexible.js'
