@@ -29,10 +29,10 @@
 <template>
     <div class="tab-box-index">
         <ul class="tab-list">
-            <li>营业收入
+            <li>营业收入</li>
+            <li>售卡分成
                 <div class="line"></div>
             </li>
-            <li>售卡分成</li>
             <li>消费佣金收入</li>
             <li>消费佣金支出</li>
         </ul>
