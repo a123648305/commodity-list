@@ -132,37 +132,40 @@
 </style>
 
 <template>
-    <div class="poster-box">
-        <!-- v-if="showFlag" -->
-        <div class="content">
-            <div v-if="showFlag">
-                <div class="mask-box"></div>
-                <div class="top-box" ref="poster">
-                    <img class="img-box" :src="url" />
-                    <div class="erweima-box">
-                        <img class="erweima" src="http://maint.deeptel.com.cn/upload/image/2/gh_4e99235906d9/1/1532420903760.jpg" alt="" />
-                    </div>
-                    <div class="business-box">
-                        <div class="logo"></div>
-                        <div class="message">
-                            <p class="name">广东谷通科技广东谷通科技广东谷通科技</p>
-                            <p class="dps">
-                                <span>邀请你加入</span>
-                                <span class="color">多粉星球</span>
-                            </p>
+    <common-scroll :options="options" @pullingDown="pullingDown" ref="commonScroll">
+        <div slot="content" class="poster-box">
+            <!-- v-if="showFlag" -->
+            <div class="content">
+                <div v-if="showFlag">
+                    <div class="mask-box"></div>
+                    <div class="top-box" ref="poster">
+                        <img class="img-box" :src="url" />
+                        <div class="erweima-box">
+                            <img class="erweima" src="http://maint.deeptel.com.cn/upload/image/2/gh_4e99235906d9/1/1532420903760.jpg" alt="" />
+                        </div>
+                        <div class="business-box">
+                            <div class="logo"></div>
+                            <div class="message">
+                                <p class="name">广东谷通科技广东谷通科技广东谷通科技</p>
+                                <p class="dps">
+                                    <span>邀请你加入</span>
+                                    <span class="color">多粉星球</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <img v-show="!showFlag" :src="src" alt="" ref="img" class="last-img">
             </div>
-            <img v-show="!showFlag" :src="src" alt="" ref="img" class="last-img">
-        </div>
 
-        <div class="bottom-dps">
-            <h2 class="name">长按图片保存或发送好友</h2>
-            <p class="dps">邀请好友加入多粉星球办理星球卡</p>
-            <p class="dps">你将获得售卡分成和消费佣金</p>
+            <div class="bottom-dps">
+                <h2 class="name">长按图片保存或发送好友</h2>
+                <p class="dps">邀请好友加入多粉星球办理星球卡</p>
+                <p class="dps">你将获得售卡分成和消费佣金</p>
+            </div>
         </div>
-    </div>
+    </common-scroll>
+
 </template>
 
 <script>
@@ -172,7 +175,10 @@ export default {
         return {
             url: './static/images/poster/index.jpg',
             src: '',
-            showFlag: true
+            showFlag: true,
+            options: {
+                top: 0,
+            },
         }
     },
     computed: {
@@ -223,7 +229,15 @@ export default {
                     _this.showFlag = false
                 }
             });
-        }
+        },
+        //滚动加载
+        loadMore() {
+            console.log('滚动加载')
+        },
+        //下拉刷新
+        pullingDown() {
+            console.log('下拉刷新')
+        },
     },
 }
 </script>
