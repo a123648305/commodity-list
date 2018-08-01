@@ -9,7 +9,8 @@ import login from '@/pages/login/index';
 import home from '@/pages/home/index';
 // 推广海报
 import poster from '@/pages/poster/index';
-
+//test
+import test from '@/pages/test/index';
 Vue.use(Router);
 
 export default new Router({
@@ -26,6 +27,10 @@ export default new Router({
             path: '/poster',
             name: 'poster',
             component: poster
+        }, {
+            path: '/test',
+            name: 'test',
+            component: test
         },
     ]
 });
