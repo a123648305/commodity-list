@@ -37,15 +37,17 @@
             <li>消费佣金支出</li>
         </ul>
         <div class="container">
-            <operating-incom></operating-incom>
+            <!--<operating-incom></operating-incom>-->
+            <sale-card></sale-card>
         </div>
     </div>
 </template>
 
 <script>
 import operatingIncom from './operatingIncom'
+import saleCard from './saleCard'
 export default {
-    components: { operatingIncom },
+    components: { operatingIncom, saleCard },
     data() {
         return {
 
