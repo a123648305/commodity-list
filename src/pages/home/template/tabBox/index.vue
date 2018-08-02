@@ -51,9 +51,9 @@ import operatingIncom from './operatingIncom'
 import saleCard from './saleCard'
 import commissionIncome from './commissionIncome'
 import commissionExpenditure from './commissionExpenditure'
-import businessSpacedata from './businessSpacedata'
+import businessEmptydata from './businessEmptydata'
 export default {
-    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure, businessSpacedata },
+    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure, businessEmptydata },
     data() {
         return {
 

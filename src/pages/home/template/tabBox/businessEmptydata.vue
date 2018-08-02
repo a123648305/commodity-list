@@ -1,5 +1,5 @@
 <style lang="less" scoped>
-.item-businessSpacedata {
+.item-businessEmptydata {
   background-color: #f0f4f7;
   width: 100%;
   .item-content {
@@ -26,7 +26,7 @@
 </style>
 
 <template>
-    <div class="item-businessSpacedata">
+    <div class="item-businessEmptydata">
         <div class="item-content">
             <ul>
                 <li class="item-list">
