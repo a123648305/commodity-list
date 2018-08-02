@@ -29,10 +29,10 @@
 <template>
     <div class="tab-box-index">
         <ul class="tab-list">
-            <li>营业收入
+            <li>营业收入</li>
+            <li>售卡分成
                 <div class="line"></div>
             </li>
-            <li>售卡分成</li>
             <li>消费佣金收入</li>
             <li>消费佣金支出</li>
         </ul>
@@ -41,7 +41,8 @@
             <!--<sale-card></sale-card>-->
             <!--<commission-income></commission-income>-->
             <!--<commission-expenditure></commission-expenditure>-->
-            <business-spacedata></business-spacedata>
+            <!--<business-spacedata></business-spacedata>-->
+            <salecard-emptydata></salecard-emptydata>
         </div>
     </div>
 </template>
@@ -52,8 +53,9 @@ import saleCard from './saleCard'
 import commissionIncome from './commissionIncome'
 import commissionExpenditure from './commissionExpenditure'
 import businessEmptydata from './businessEmptydata'
+import salecardEmptydata from './salecardEmptydata'
 export default {
-    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure, businessEmptydata },
+    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure, businessEmptydata, salecardEmptydata },
     data() {
         return {
 
