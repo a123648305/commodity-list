@@ -1,30 +1,41 @@
 <style lang="less" scoped>
-.img {
-  width: 25px;
+.common-scroll-loading {
+    .img {
+        vertical-align: middle;
+        width: 60px;
+    }
+
+    .text {
+        margin-top: 15px;
+        float: right;
+        margin-left: 15px;
+        color: #868685;
+    }
 }
 </style>
-  
+
 <template>
-  <div>
-    <img class="img" src="./loading.gif">
-  </div>
+    <div class="common-scroll-loading">
+        <img class="img" src="./loading.gif">
+        <span class="text">正在加载中...</span>
+    </div>
 </template>
-  
+
 <script>
 export default {
-  data() {
-    return {
+    data() {
+        return {
 
-    }
-  },
-  computed: {
+        }
+    },
+    computed: {
 
-  },
-  mounted() {
+    },
+    mounted() {
 
-  },
-  methods: {
+    },
+    methods: {
 
-  },
+    },
 }
 </script>

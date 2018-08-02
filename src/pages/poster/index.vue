@@ -2,12 +2,6 @@
 .poster-box {
     box-sizing: border-box;
     background-color: #ffffff;
-    overflow-y: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
     .mask-box {
         position: fixed;
         top: 0;
@@ -132,9 +126,8 @@
 </style>
 
 <template>
-    <common-scroll :options="options" @pullingDown="pullingDown" ref="commonScroll">
+    <common-scroll :options="options" ref="commonScroll">
         <div slot="content" class="poster-box">
-            <!-- v-if="showFlag" -->
             <div class="content">
                 <div v-if="showFlag">
                     <div class="mask-box"></div>
@@ -208,11 +201,11 @@ export default {
             var opts = {
                 scale: scale, // 添加的scale 参数
                 canvas: canvas, //自定义 canvas
-                logging: false, //日志开关，便于查看html2canvas的内部执行流程
+                // logging: false, //日志开关，便于查看html2canvas的内部执行流程
                 width: width, //dom 原始宽度
                 height: height,
                 backgroundColor: '#000000',
-                logging: true,
+                // logging: true,
                 useCORS: true // 【重要】开启跨域配置
             };
             html2canvas(shareContent, opts).then(function (canvas) {
@@ -222,21 +215,12 @@ export default {
                 context.webkitImageSmoothingEnabled = false;
                 context.msImageSmoothingEnabled = false;
                 context.imageSmoothingEnabled = false;
-                console.log(context, 'context')
 
                 _this.src = canvas.toDataURL('image/jpg')
                 _this.$refs.img.onload = function () {
                     _this.showFlag = false
                 }
             });
-        },
-        //滚动加载
-        loadMore() {
-            console.log('滚动加载')
-        },
-        //下拉刷新
-        pullingDown() {
-            console.log('下拉刷新')
         },
     },
 }

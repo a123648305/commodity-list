@@ -25,6 +25,6 @@ export default new Router({
             path: '/poster',
             name: 'poster',
             component: poster
-        },
+        }
     ]
 });
