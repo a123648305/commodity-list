@@ -9,6 +9,8 @@ import './assets/css/reset.less'
 // import 'lib-flexible/flexible.js'
 import 'lib-flexible/flexible.js'
 Vue.config.productionTip = true
+import install from '@/components/common/index'
+install(Vue)
 
 /* eslint-disable no-new */
 new Vue({
