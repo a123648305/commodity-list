@@ -43,7 +43,7 @@
             <!--<commission-expenditure></commission-expenditure>-->
             <!--<business-spacedata></business-spacedata>-->
             <!--<salecard-emptydata></salecard-emptydata>-->
-            <commissionincome-emptydata></commissionincome-emptydata>
+            <income-emptydata></income-emptydata>
         </div>
     </div>
 </template>
@@ -55,9 +55,9 @@ import commissionIncome from './commissionIncome'
 import commissionExpenditure from './commissionExpenditure'
 import businessEmptydata from './businessEmptydata'
 import salecardEmptydata from './salecardEmptydata'
-import CommissionincomeEmptydata from './CommissionincomeEmptydata'
+import incomeEmptydata from './incomeEmptydata'
 export default {
-    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure, businessEmptydata, salecardEmptydata, CommissionincomeEmptydata },
+    components: { operatingIncom, saleCard, commissionIncome, commissionExpenditure, businessEmptydata, salecardEmptydata, incomeEmptydata },
     data() {
         return {
 
