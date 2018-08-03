@@ -1,5 +1,22 @@
-.common-card-item {
+.common-card-bg {
+    padding-top: 15px;
+    overflow: hidden;
     margin: 0 23px;
+    position: relative;
+
+    .item-top {
+        padding: 51px 23px;
+        background-color: #fff;
+        font-size: 36.25px;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        .dps {
+            float: right;
+        }
+    }
+}
+.common-card-item {
     box-sizing: border-box;
     .item-box-top {
         padding: 25px 25px 27px 25px;
@@ -29,7 +46,7 @@
         border-top: 3px solid #f0f4f7;
         position: relative;
         padding: 27px 25px 18px 25px;
-        margin-bottom: 19px;
+        margin-bottom: 20px;
         border-radius: 0 0 20px 20px;
         .left-solt {
             width: 20px;
@@ -49,11 +66,18 @@
             top: -10px;
             right: -5px;
         }
+        .iconfont-box {
+            padding-left: 50px;
+            float: right;
+        }
         .iconfont {
             float: right;
             color: #979797;
             font-size: 25px;
-            padding-left: 30px;
+        }
+        .transform {
+            transform: rotate(90deg);
+            transform-origin: center center;
         }
         .item-box {
             padding: 27px 24px 26px 24px;

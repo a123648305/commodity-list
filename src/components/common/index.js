@@ -1,8 +1,9 @@
 import commonScroll from './commonScroll/index'
 import _utils from './utils/index'
-
+import commonNoData from './commonNoData/index'
 const components = [
     commonScroll,
+    commonNoData
 ]
 const install = function (Vue) {
     components.map(component => {

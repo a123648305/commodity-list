@@ -160,16 +160,18 @@ export default {
         this.$refs.scroll && this.$refs.scroll.destroy()
     },
     methods: {
+        setHeight() {
+            if (this.$refs.listWrapper && (this.pullDownRefresh || this.pullUpLoad)) {
+                this.$refs.listWrapper.style.minHeight = `${getRect(this.$refs.wrapper).height + 1}px`
+                this.$refs.wrapper.style.minHeight = `${window.innerHeight}px`
+            }
+        },
         initScroll() {
             console.log(window.innerHeight, 'this.$refs.wrapper')
             if (!this.$refs.wrapper) {
                 return
             }
-            if (this.$refs.listWrapper && (this.pullDownRefresh || this.pullUpLoad)) {
-                this.$refs.listWrapper.style.minHeight = `${getRect(this.$refs.wrapper).height + 1}px`
-                this.$refs.wrapper.style.minHeight = `${window.innerHeight}px`
-            }
-
+            this.setHeight()
             let options = {
                 probeType: this.probeType,
                 click: this.click,
