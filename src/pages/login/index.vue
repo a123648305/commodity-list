@@ -58,8 +58,6 @@
             }
         }
         .checked-box {
-            // padding-left: 15px;
-            // width: 98%;
             position: relative;
             line-height: 24px;
             .password-left {
@@ -67,10 +65,7 @@
                 left: 32px;
             }
             .password-icon {
-                background-color: #f3f3fa;
-                width: 27px;
-                height: 27px;
-                border-radius: 13px;
+                color: #f3f3fa;
                 display: inline-block;
             }
             .password-text {
@@ -141,13 +136,13 @@
             </div>
             <div class="checked-box">
                 <div class="password-left">
-                    <!-- <div class="password-icon"></div> -->
-                    <i class="iconfont icon-zhengque"></i>
+                    <!-- <i class="iconfont icon-o password-icon"></i> -->
+                    <i class="iconfont icon-xuanzhong"></i>
                     <div class="password-text">记住密码</div>
                 </div>
                 <div class="password-right">
-                    <div class="password-icon"></div>
-                    <!-- <i class="iconfont icon-zhengque"></i> -->
+                    <i class="iconfont icon-o password-icon"></i>
+                    <!-- <i class="iconfont icon-xuanzhong"></i> -->
                     <div class="password-text">自动登录</div>
                 </div>
             </div>
