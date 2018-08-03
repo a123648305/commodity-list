@@ -9,6 +9,7 @@ import login from '@/pages/login/index';
 import home from '@/pages/home/index';
 // 推广海报
 import poster from '@/pages/poster/index';
+import topStatistics from '@/pages/home/template/topStatistics/index';
 
 Vue.use(Router);
 
@@ -26,6 +27,11 @@ export default new Router({
             path: '/poster',
             name: 'poster',
             component: poster
+        },
+        {
+            path:'/index',
+            name:'index',
+            component:topStatistics
         },
     ]
 });

@@ -17,19 +17,19 @@
 
 .icon-tuichu:before { content: "\e68f"; }
 
-.icon-zhengque:before { content: "\e62b"; }
+.icon-zhengque:before { content: "\e62b"; }/*勾*/
 
-.icon-ruhetihuan:before { content: "\e69d"; }
+.icon-ruhetihuan:before { content: "\e69d"; }/*问号*/
 
-.icon-fenxi:before { content: "\e604"; }
+.icon-fenxi:before { content: "\e604"; }/*售卡分成*/
 
-.icon-huobi:before { content: "\e608"; }
+.icon-huobi:before { content: "\e608"; }/**/
 
-.icon-jijin:before { content: "\e609"; }
+.icon-jijin:before { content: "\e609"; }/**/
 
-.icon-qiandai:before { content: "\e60f"; }
+.icon-qiandai:before { content: "\e60f"; }/**/
 
-.icon-haibao:before { content: "\e83d"; }
+.icon-haibao:before { content: "\e83d"; }/**/
 
-.icon-more:before { content: "\e6db"; }
+.icon-more:before { content: "\e6db"; }/**/
 
