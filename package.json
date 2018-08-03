@@ -10,7 +10,7 @@
         "build": "node build/build.js"
     },
     "dependencies": {
-        "better-scroll": "^1.12.5",
+        "better-scroll": "^1.12.6",
         "html2canvas": "^1.0.0-alpha.12",
         "lib-flexible": "^0.3.2",
         "normalize.css": "^8.0.0",

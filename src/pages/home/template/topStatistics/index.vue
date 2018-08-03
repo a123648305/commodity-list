@@ -126,10 +126,11 @@
        right: 0;
        box-sizing: border-box;
        margin-top: 36px;
-       /* display: none; */
+       display: none;
    }
    .triangle{
        width: 0px;
+
        height: 0px;
        border-left: 16px solid transparent;
         border-right: 16px solid transparent;
@@ -184,18 +185,18 @@
                     <div class="navbar busin-income">
                         <p class="text-money">￥200.00</p>
                         <div class="text-bot-box">
-                            <div class="round-box1">
+                            <!-- <div class="round-box1"> -->
                                     <i class="iconfont icon-huobi"></i>
-                            </div>
+                            <!-- </div> -->
                             <p class="shuoming">营业收入</p>
                         </div>
                     </div>
                     <div class="navbar divide-income">
                             <p class="text-money">￥400.00</p>
                             <div class="text-bot-box">
-                                <div class="round-box2">
+                                <!-- <div class="round-box2"> -->
                                         <i class="iconfont icon-fenxi"></i>
-                                </div>
+                                <!-- </div> -->
                                 <p class="shuoming">售卡分成</p>
                             </div>
                     </div>
@@ -204,18 +205,18 @@
                     <div class="navbar consum-income">
                             <p class="text-money">￥200.00</p>
                             <div class="text-bot-box">
-                                <div class="round-box3">
+                                <!-- <div class="round-box3"> -->
                                         <i class="iconfont icon-fenxi"></i>
-                                </div>
+                                <!-- </div> -->
                                 <p class="shuoming">消费佣金收入</p>
                             </div>
                     </div>
                     <div class="navbar consum-pay">
                             <p class="text-money">￥400.00</p>
                             <div class="text-bot-box">
-                                <div class="round-box4">
+                                <!-- <div class="round-box4"> -->
                                         <i class="iconfont icon-fenxi"></i>
-                                </div>
+                                <!-- </div> -->
                                 <p class="shuoming">消费佣金收支出</p>
                             </div>
                     </div>
