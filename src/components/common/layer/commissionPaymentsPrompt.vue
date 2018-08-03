@@ -5,7 +5,7 @@
     right:74px;
     margin-top:50%;
     text-align:center;
-    background-color: #666;//fff
+    background-color: #fff;//fff
     border-radius: 10px;
     padding-top: 25px;
     .tip-title{

@@ -52,18 +52,12 @@
                 position: absolute;
                 right: 45px;
                 top: 31px;
-                background: #242133;
-                border-radius: 50%;
                 width: 25px;
                 height: 25px;
                 line-height: 23px;
-                color: #fff;
-                text-align: center;
             }
         }
         .checked-box {
-            // padding-left: 15px;
-            // width: 98%;
             position: relative;
             line-height: 24px;
             .password-left {
@@ -71,10 +65,7 @@
                 left: 32px;
             }
             .password-icon {
-                background-color: #f3f3fa;
-                width: 27px;
-                height: 27px;
-                border-radius: 13px;
+                color: #f3f3fa;
                 display: inline-block;
             }
             .password-text {
@@ -137,21 +128,21 @@
             <div class="input-title">多粉星球商家版</div>
             <div class="input-item">
                 <input type="text" placeholder="请输入账号" name="" class="input" />
-                <div class="delete-icon">x</div>
+                <i class="iconfont icon-close delete-icon"></i>
             </div>
             <div class="input-item">
                 <input type="password" placeholder="请输入密码" name="" class="input">
-                <div class="delete-icon">x</div>
+                <i class="iconfont icon-close delete-icon"></i>
             </div>
             <div class="checked-box">
                 <div class="password-left">
-                    <!-- <div class="password-icon"></div> -->
-                    <i class="iconfont icon-zhengque"></i>
+                    <!-- <i class="iconfont icon-o password-icon"></i> -->
+                    <i class="iconfont icon-xuanzhong"></i>
                     <div class="password-text">记住密码</div>
                 </div>
                 <div class="password-right">
-                    <div class="password-icon"></div>
-                    <!-- <i class="iconfont icon-zhengque"></i> -->
+                    <i class="iconfont icon-o password-icon"></i>
+                    <!-- <i class="iconfont icon-xuanzhong"></i> -->
                     <div class="password-text">自动登录</div>
                 </div>
             </div>
