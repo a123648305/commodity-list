@@ -4,7 +4,7 @@
     left:43px;
     right:43px;
     text-align:center;
-    background-color: #666;//fff
+    background-color: #fff;//fff
     border-radius: 10px;
     padding-top: 25px;
     border: 1px solid;
