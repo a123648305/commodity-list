@@ -52,13 +52,9 @@
                 position: absolute;
                 right: 45px;
                 top: 31px;
-                background: #242133;
-                border-radius: 50%;
                 width: 25px;
                 height: 25px;
                 line-height: 23px;
-                color: #fff;
-                text-align: center;
             }
         }
         .checked-box {
@@ -137,11 +133,11 @@
             <div class="input-title">多粉星球商家版</div>
             <div class="input-item">
                 <input type="text" placeholder="请输入账号" name="" class="input" />
-                <div class="delete-icon">x</div>
+                <i class="iconfont icon-close delete-icon"></i>
             </div>
             <div class="input-item">
                 <input type="password" placeholder="请输入密码" name="" class="input">
-                <div class="delete-icon">x</div>
+                <i class="iconfont icon-close delete-icon"></i>
             </div>
             <div class="checked-box">
                 <div class="password-left">
