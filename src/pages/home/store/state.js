@@ -1,3 +1,4 @@
 export default {
-    topStatisticsAnimate: false
+    topStatisticsAnimate: false,
+    topBoxBarSelectInex: 1
 }

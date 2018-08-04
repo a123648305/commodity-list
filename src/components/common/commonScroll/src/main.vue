@@ -2,8 +2,7 @@
     <div ref="wrapper" class="list-wrapper">
         <div class="scroll-content">
             <div ref="listWrapper">
-                <slot name="content">
-                </slot>
+                <slot name="content"></slot>
             </div>
             <slot name="pullup" :pullUpLoad="pullUpLoad" :isPullUpLoad="isPullUpLoad">
                 <div class="pullup-wrapper" v-if="pullUpLoad">
@@ -16,7 +15,7 @@
                 </div>
             </slot>
         </div>
-        <slot name="pulldown" :pullDownRefresh="pullDownRefresh" :pullDownStyle="pullDownStyle" :beforePullDown="beforePullDown" :isPullingDown="isPullingDown" :bubbleY="bubbleY">
+        <slot name="pulldown" :class="showPullDownTips?'pulldown-show':'pulldown-hide'" :pullDownRefresh="pullDownRefresh" :pullDownStyle="pullDownStyle" :beforePullDown="beforePullDown" :isPullingDown="isPullingDown" :bubbleY="bubbleY">
             <div ref="pulldown" class="pulldown-wrapper" :style="pullDownStyle" v-if="pullDownRefresh">
                 <div class="before-trigger" v-if="beforePullDown">
                     <bubble :y="bubbleY"></bubble>
@@ -34,7 +33,7 @@
     </div>
 </template>
 
-<script type="text/ecmascript-6">
+<script>
 import BScroll from 'better-scroll'
 import Loading from './loading/loading.vue'
 import Bubble from './bubble/bubble.vue'
@@ -127,6 +126,15 @@ export default {
         },
         zoom: {
             default: false
+        },
+        scrollY: {
+            default: true
+        },
+        scrollX: {
+            default: false
+        },
+        showPullDownTips: {
+            default: true
         }
     },
     data() {
@@ -160,6 +168,10 @@ export default {
         this.$refs.scroll && this.$refs.scroll.destroy()
     },
     methods: {
+        reInitScroll() {
+            if (this.$refs.scroll) this.$refs.scroll.destroy()
+            this.initScroll()
+        },
         setHeight() {
             if (this.$refs.listWrapper && (this.pullDownRefresh || this.pullUpLoad)) {
                 this.$refs.listWrapper.style.minHeight = `${getRect(this.$refs.wrapper).height + 1}px`
@@ -175,8 +187,8 @@ export default {
             let options = {
                 probeType: this.probeType,
                 click: this.click,
-                scrollY: this.freeScroll || this.direction === DIRECTION_V,
-                scrollX: this.freeScroll || this.direction === DIRECTION_H,
+                scrollY: this.scrollY,
+                scrollX: this.scrollX,
                 // scrollbar: this.scrollbar,
                 pullDownRefresh: this.pullDownRefresh,
                 pullUpLoad: this.pullUpLoad,
@@ -188,6 +200,9 @@ export default {
             }
             console.log(options, 'options')
             this.scroll = new BScroll(this.$refs.wrapper, options)
+            this.scroll.on('beforeScrollStart', () => {
+                this.scroll.refresh()
+            })
             console.log(this.listenScroll, 'listenScroll')
             if (this.listenScroll) {
                 this.scroll.on('scroll', (pos) => {
@@ -228,8 +243,10 @@ export default {
         refresh() {
             this.scroll && this.scroll.refresh()
         },
+        //设置滚动条的Y位置
         scrollTo() {
-            this.scroll && this.scroll.scrollTo.apply(this.scroll, arguments)
+            return this.scroll.scrollTo(0, -214)
+            //this.scroll && this.scroll.scrollTo.apply(this.scroll, arguments)
         },
         scrollToElement() {
             this.scroll && this.scroll.scrollToElement.apply(this.scroll, arguments)
@@ -358,7 +375,7 @@ export default {
     justify-content: center;
     align-items: center;
     transition: all;
-
+    // top: -100px; //add
     .after-trigger {
         margin-top: 10px;
     }
@@ -370,5 +387,11 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 16px 0;
+}
+.pulldown-show {
+    opacity: 1;
+}
+.pulldown-hide {
+    opacity: 0;
 }
 </style>

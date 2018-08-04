@@ -1,9 +1,24 @@
 <style lang="less" scoped>
+.common-card-nums {
+    overflow: hidden;
+    position: relative;
+    .item-top {
+        padding: 51px 23px;
+        background-color: #fff;
+        font-size: 36.25px;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        .dps {
+            float: right;
+        }
+    }
+}
 </style>
 
 <template>
-    <common-scroll ref="scroll" :scrollbar="true" :listenScroll="true" :pullDownRefresh="true" :pullUpLoad="true" :startY="parseInt(startY)" @pullingDown="onPullingDown" @pullingUp="onPullingUp" @scroll="scroll">
-        <div slot="content" class="common-card-bg">
+    <tab-container>
+        <div class="common-card-nums">
             <div class="item-top">
                 <ul>
                     <li>
@@ -12,71 +27,66 @@
                     </li>
                 </ul>
             </div>
-            <div class="common-card-item" v-for="(item,index) in data" :key="index">
+        </div>
+        <div class="common-card-item" v-for="(item,index) in data" :key="index">
+            <div class="item-box-top">
+                <ul>
+                    <li class="item-list">
+                        <span class="title">时间</span>
+                        <span class="dps">2018-12-02 15:30:20</span>
+                    </li>
+                    <li class="item-list">
+                        <span>粉丝手机号</span>
+                        <span class="dps">18814125786</span>
+                    </li>
+                    <li class="item-list">
+                        <span>粉丝星球卡号</span>
+                        <span class="green-dps">11111111</span>
+                    </li>
+                    <li class="item-list">
+                        <span>活动卡名称</span>
+                        <span class="dps">惠州大众</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-box-bottom">
+                <div class="left-solt"></div>
+                <div class="right-solt"></div>
                 <div class="item-box-top">
                     <ul>
                         <li class="item-list">
-                            <span class="title">时间</span>
-                            <span class="dps">2018-12-02 15:30:20</span>
+                            <span>金额</span>
+                            <span class="dps">￥200.00</span>
                         </li>
                         <li class="item-list">
-                            <span>粉丝手机号</span>
-                            <span class="dps">18814125786</span>
+                            <span>分成比例</span>
+                            <span class="green-dps">30%</span>
                         </li>
                         <li class="item-list">
-                            <span>粉丝星球卡号</span>
-                            <span class="green-dps">11111111</span>
-                        </li>
-                        <li class="item-list">
-                            <span>活动卡名称</span>
-                            <span class="dps">惠州大众</span>
+                            <span>分成佣金</span>
+                            <span class="dps">￥60.00</span>
                         </li>
                     </ul>
                 </div>
-                <div class="item-box-bottom">
-                    <div class="left-solt"></div>
-                    <div class="right-solt"></div>
-                    <div class="item-box-top">
-                        <ul>
-                            <li class="item-list">
-                                <span>金额</span>
-                                <span class="dps">￥200.00</span>
-                            </li>
-                            <li class="item-list">
-                                <span>分成比例</span>
-                                <span class="green-dps">30%</span>
-                            </li>
-                            <li class="item-list">
-                                <span>分成佣金</span>
-                                <span class="dps">￥60.00</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
-    </common-scroll>
+    </tab-container>
 </template>
 
 <script>
+import tabContainer from './../common/tabContainer'
 export default {
+    components: { tabContainer },
     data() {
         return {
-
-            startY: 0,
-            data: []
+            data: [3134, 234, 234, 234, 23523, 25, 25325, 32]
         }
     },
     computed: {
 
     },
     mounted() {
-        for (let i = 0; i < 30; i++) {
-            this.data.push({
-                index: i,
-                name: 'name---' + i
-            })
-        }
+
     },
     methods: {
         onPullingDown() {
