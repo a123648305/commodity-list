@@ -1,65 +1,72 @@
 <style lang="less" scoped>
- .tip{
+.masking{ 
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left:72px;
-    right:72px;
-    margin-top: 50%;
-    text-align:center;
-    background-color: #fff;//fff
-    border-radius: 10px;
-    padding-top:25px;
-    .tip-title{
-        font-size: 30.21px;
-        color: #333;
-        font-weight: bold;
-    }
-   .tip-content{
-     padding:70px 0px;
-     font-size: 27.19px;
-     color: #888;
-     text-align: center;
-     color: #404040;
-     ul li{
-            margin-top: 12px;
-            &:first-child{
-                margin-top: 0;
+    .tip{
+        position: absolute;
+        left:72px;
+        right:72px;
+        margin-top: 50%;
+        text-align:center;
+        background-color: #fff;//fff
+        border-radius: 10px;
+        padding-top:25px;
+        .tip-title{
+            font-size: 30.21px;
+            color: #333;
+            font-weight: bold;
+        }
+    .tip-content{
+        padding:70px 0px;
+        font-size: 27.19px;
+        color: #888;
+        text-align: center;
+        color: #404040;
+        ul li{
+                margin-top: 12px;
+                &:first-child{
+                    margin-top: 0;
+                }
+                
             }
+        }
+        .tip-line{
+            border:1.2px solid #dcdcdc;
+            display:block;
             
         }
-    }
-    .tip-line{
-        border:1.2px solid #dcdcdc;
-        display:block;
-        
-    }
-    .tip-footer{
-        color:#242133;
-        font-size: 27.19px;
-        .ok{
-            width:100%;
-            height: 80px;
-            border: none;
-            background-color: transparent;
-            
-            
+        .tip-footer{
+            color:#242133;
+            font-size: 27.19px;
+            .ok{
+                width:100%;
+                height: 80px;
+                border: none;
+                background-color: transparent;
+                
+                
+            }
         }
     }
 }
 </style>
 <template>
      <!-- 售卡提成 -->
-    <div class="tip">
-        <span class="tip-title">提示</span>
-       <div class="tip-content">
-           <ul>
-               <li><span>粉丝在你这每成功办理一张星球卡,</span></li>
-               <li><span>获得的售卡提成</span></li>
-           </ul>
-        </div>
-            <span class="tip-line"></span>
-         <div class="tip-footer"><button class="ok">我知道啦</button></div>  
-    </div> 
-
+     <div class="masking">
+        <div class="tip">
+            <span class="tip-title">提示</span>
+        <div class="tip-content">
+            <ul>
+                <li><span>粉丝在你这每成功办理一张星球卡,</span></li>
+                <li><span>获得的售卡提成</span></li>
+            </ul>
+            </div>
+                <span class="tip-line"></span>
+            <div class="tip-footer"><button class="ok">我知道啦</button></div>  
+        </div> 
+     </div>
 
 </template>
 
