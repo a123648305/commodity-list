@@ -4,11 +4,13 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    display: flex;
+    align-items: center;
     .tip{
         position: absolute; 
         left:74px;
         right:74px;
-        margin-top:50%;
+        //margin-top:50%;
         text-align:center;
         background-color: #fff;//fff
         border-radius: 10px;

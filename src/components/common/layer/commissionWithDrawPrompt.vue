@@ -4,6 +4,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    display: flex;
+    align-items: center;
     .tip{
         position: absolute;  
         left:43px;
@@ -13,7 +15,7 @@
         border-radius: 10px;
         padding-top: 25px;
         border: 1px solid;
-        margin-top: 50%;
+        //margin-top: 50%;
         padding: 36px 0px;
         .tip-title{
             font-size: 30.21px;
