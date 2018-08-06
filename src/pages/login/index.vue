@@ -8,7 +8,7 @@
     height: 100vh;
     /*顶部标题提示 start*/
     .top-title {
-        padding: 96px 0;
+        padding: 96px 0 76px 0;
         .top-logo {
             & > img {
                 width: 100%;
@@ -55,11 +55,12 @@
                 width: 25px;
                 height: 25px;
                 line-height: 23px;
+                color: #242133;
             }
         }
         .checked-box {
             position: relative;
-            line-height: 24px;
+            height: 24px;
             .password-left {
                 position: absolute;
                 left: 32px;
@@ -137,7 +138,7 @@
             <div class="checked-box">
                 <div class="password-left">
                     <!-- <i class="iconfont icon-o password-icon"></i> -->
-                    <i class="iconfont icon-xuanzhong"></i>
+                    <i class="iconfont icon-xuanzhong delete-icon"></i>
                     <div class="password-text">记住密码</div>
                 </div>
                 <div class="password-right">
