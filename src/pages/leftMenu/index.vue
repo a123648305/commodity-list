@@ -1,0 +1,293 @@
+<style lang="less" scoped>
+.leftlist{
+    width:325px;
+    //height: 200px;
+    //background-color:seashell;
+    left: 0;
+    position: absolute;
+    border-right: 1px solid #f5f5f5;
+    .leftlist-top{     
+        text-align: center;
+        border-bottom: 1px solid #f5f5f5;
+        padding:24px 10px;
+        font-size:20px;
+        .menu{
+            left:20px;
+            top: 24px;
+            position: absolute;
+            font-size: 22px;
+            color: #ffb555;
+        }
+    }
+    .leftlist-list{
+        ul{
+            padding: 0 10px;
+            li{ //height:116px;
+                list-style-type: none;
+                border-bottom: 1px solid #f5f5f5;
+                padding:15px 0px;
+                .list-left{
+                    float: left;
+                    font-size: 15px;
+                    p{  
+                        color: #999;
+                        margin-top: 15px;
+                        
+                    }
+                    .sign-yel{
+                        display: block;
+                        //padding: 10px 10px;
+                        background-color: #ffb555;
+                        float: left;
+                        padding: 5px 10px;
+                        color: #fff;
+                        border-radius: 3px;
+                        margin-top: -4px;
+                        margin-right: 5px;
+                        font-size: 10px;
+                    }
+                     .sign-red{
+                        display: block;
+                        //padding: 10px 10px;
+                        background-color: #ff8059;
+                        float: left;
+                        padding: 5px 10px;
+                        color: #fff;
+                        border-radius: 3px;
+                        margin-top: -4px;
+                        margin-right: 5px;
+                        font-size: 10px;
+                    }
+                     .sign-free{
+                        display: block;
+                        //padding: 10px 10px;
+                        background-color: #ffeeee;
+                        float: left;
+                        padding: 5px 10px;
+                        color: #ff3c3c;
+                        border-radius: 3px;
+                        margin-top: -4px;
+                        margin-right: 5px;
+                        border: 1px solid #ff3c3c;
+                        font-size: 10px;
+                    }
+                }
+                .list-right{
+                    //float: right;
+                    text-align: right;
+                    p{
+                       &:first-child{
+                           color: #ffb555;
+                           font-size: 20px;
+
+                       }
+                       &:nth-child(2){
+                           color: #999;
+                           margin-top:10px;
+                           text-decoration:line-through;
+                           
+                       }
+                     
+                    }
+                    .list-right-number{
+                        margin-top: 12px;
+                        font-size: 20px;
+                    }
+                    .sub{
+                        font-size: 25px;
+                        margin-right: 10px;
+                        
+                    }
+                    .add{
+                        font-size: 25px;
+                        margin-left: 10px;
+                        color: #fff;
+                        border-radius: 50%;
+                        background-color: #ffb555;
+                        
+                    }
+        
+                    
+                }
+
+            }
+        }
+    }
+    .discount-card{
+        padding-top: 16px;
+        display: flex;
+        justify-content:space-around;
+        span{
+            text-align: center;
+            width: 85px;
+            //height: 45px;
+            background-color: #ffb555;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 10px;
+            padding: 6px 0;
+            p{  
+                &:nth-child(2){
+                    margin-top:7px;
+                }
+            }
+            &:nth-child(3){
+                background-color: #f879b1;
+            }
+             &:nth-child(4){
+                background-color: #ff7c54;
+            }
+           
+        }
+        .close{
+            position: absolute;
+            margin-top: -10px;
+            color: #999;
+            font-size: 20px;
+            margin-left: -70px;
+            background-color: #fff;
+            border-radius:20px;
+        }
+    }
+    .discount-price{
+        margin-top:13px;
+        padding-bottom: 15px;
+        padding:0 10px; 
+        span{
+          float: left;
+          font-size: 15px;
+          &:last-child{
+                float: right;
+                p{
+                    text-align: right;
+                    &:first-child{
+                        color: #ffb555;
+                        font-size:18px;
+                    }
+                    &:last-child{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &:first-child{
+                p{
+                   &:last-child{
+                        margin-top: 10px;
+                    }
+                }
+            }
+              
+          
+        }
+    }
+}
+</style>
+       
+<template>
+    <div class="leftlist">
+       <div class="leftlist-top"><i class="menu iconfont icon-caidandianji-copy"></i>结账清单</div>
+       <div class="leftlist-list">
+           <ul>
+               <li><div class="list-left">
+                   <span class="sign-yel">特价</span>丹麦蓝罐曲奇饼干...
+                   <p>奶香味</p>
+               </div>
+               <div class="list-right"><p>￥168</p>
+               <p>￥200</p>
+               <div class="list-right-number">
+                   <span class="sub iconfont icon-jian" @click="sub"></span>
+                   <span>{{count}}</span>
+                   <span class="add iconfont icon-jia" @click="add"></span>
+               </div>
+               </div></li>
+               <li><div class="list-left">
+                   <span class="sign-yel">买赠</span>丹麦蓝罐曲奇饼干...
+                   <p>奶香味</p>
+               </div>
+               <div class="list-right"><p>￥168</p>
+               <p>￥200</p>
+               <div class="list-right-number">
+                   <span class="sub iconfont icon-jian"></span>
+                    <span>1</span>
+                   <span class="add iconfont icon-jia"></span>
+               </div>
+               </div></li>
+               <li><div class="list-left">
+                   <span class="sign-red">8折</span>丹麦蓝罐曲奇饼干...
+                   <p>奶香味</p>
+               </div>
+               <div class="list-right"><p>￥168</p>
+               <p>￥200</p>
+               <div class="list-right-number">
+                   <span class="sub iconfont icon-jian"></span>
+                    <span>1</span>
+                   <span class="add iconfont icon-jia"></span>
+               </div>
+               </div></li>
+               <li><div class="list-left">
+                   <span class="sign-free">赠</span>丹麦蓝罐曲奇饼干...
+                   <p>奶香味</p>
+               </div>
+               <div class="list-right"><p>￥0</p>
+               <p>￥200</p>
+               <div class="list-right-number"> 
+                    <span>1</span>
+               </div>
+               </div></li>
+           </ul>
+       </div>
+       <div class="discount-card">
+           <span>
+            <p>粉币</p>
+           <p>-￥10</p>
+           </span>
+           <i class="close iconfont  icon-closezhuanhuan "></i>
+           <span><p>积分</p>
+           <p>-￥10</p></span>
+           <span><p>无门槛券</p>
+           <p>-￥5</p></span>
+       </div>
+       <div class="discount-price">
+           <span><p>订单金额：</p>
+           <p>优惠金额：</p>
+           
+           </span>
+           <span>
+           <p>￥266</p>
+           <p>￥20</p></span>
+       </div>
+
+    </div>
+       
+    
+</template>
+    
+    
+<script>
+export default {
+    data() {
+        return {
+            count:1,
+
+        }
+    },
+    computed: {
+       
+    },
+    mounted() {
+        
+    },
+    methods: {
+      add(){
+          this.count++;
+          //console.log(this.count);
+      },
+      sub(){
+          if(this.count!=0)
+          this.count--;
+          //console.log(this.count);
+      }
+
+    },
+}
+</script>

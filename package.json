@@ -12,6 +12,7 @@
     "dependencies": {
         "animate.css": "^3.7.0",
         "better-scroll": "^1.12.5",
+        "element-ui": "^2.4.5",
         "html2canvas": "^1.0.0-alpha.12",
         "lib-flexible": "^0.3.2",
         "normalize.css": "^8.0.0",

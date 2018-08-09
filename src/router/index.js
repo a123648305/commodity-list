@@ -6,18 +6,26 @@ export default new Router({
             path: '/',
             name: 'login',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/pages/login/index'), // 登录
+                import ( /* webpackChunkName: "home" */ '@/pages/leftMenu/index'), // 登录
         },
         {
-            path: '/home',
-            name: 'home',
+            path: '/list',
+            name: 'list',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/pages/home/index'), // 首页
-        }, {
-            path: '/poster',
-            name: 'poster',
+                import ( /* webpackChunkName: "home" */ '@/pages/centerContent/index'), // 
+        }, 
+        {
+            path: '/bottom',
+            name: 'bottom',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/poster/index'), // 推广海报
+                import ( /* webpackChunkName: "poster" */ '@/pages/bottom/index'), // 
         },
+        {
+            path: '/test',
+            name: 'test',
+            component: () =>
+                import ( /* webpackChunkName: "poster" */ '@/pages/rightMenu/index'), // 
+        },
+      
     ]
 });
