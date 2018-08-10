@@ -1,16 +1,15 @@
 <style lang="less" scoped>
 .leftlist{
     width:325px;
-    //height: 200px;
-    //background-color:seashell;
     left: 0;
     position: absolute;
     border-right: 1px solid #f5f5f5;
+    height: calc(100% - 80px);
     .leftlist-top{     
         text-align: center;
         border-bottom: 1px solid #f5f5f5;
-        padding:24px 10px;
-        font-size:20px;
+        padding:25px 10px;
+        font-size:20px; 
         .menu{
             left:20px;
             top: 24px;
@@ -32,6 +31,7 @@
                     p{  
                         color: #999;
                         margin-top: 15px;
+                        font-size: 13px;
                         
                     }
                     .sign-yel{
@@ -44,7 +44,7 @@
                         border-radius: 3px;
                         margin-top: -4px;
                         margin-right: 5px;
-                        font-size: 10px;
+                        font-size: 12px;
                     }
                      .sign-red{
                         display: block;
@@ -56,7 +56,7 @@
                         border-radius: 3px;
                         margin-top: -4px;
                         margin-right: 5px;
-                        font-size: 10px;
+                        font-size: 12px;
                     }
                      .sign-free{
                         display: block;
@@ -69,7 +69,7 @@
                         margin-top: -4px;
                         margin-right: 5px;
                         border: 1px solid #ff3c3c;
-                        font-size: 10px;
+                        font-size: 12px;
                     }
                 }
                 .list-right{
@@ -78,20 +78,21 @@
                     p{
                        &:first-child{
                            color: #ffb555;
-                           font-size: 20px;
+                           font-size:17px;
 
                        }
                        &:nth-child(2){
                            color: #999;
                            margin-top:10px;
                            text-decoration:line-through;
+                           font-size: 13px;
                            
                        }
                      
                     }
                     .list-right-number{
                         margin-top: 12px;
-                        font-size: 20px;
+                        font-size:17px;
                     }
                     .sub{
                         font-size: 25px;
@@ -114,7 +115,7 @@
         }
     }
     .discount-card{
-        padding-top: 16px;
+        padding-top: 27px;
         display: flex;
         justify-content:space-around;
         span{
@@ -124,7 +125,7 @@
             background-color: #ffb555;
             color: #fff;
             border-radius: 5px;
-            font-size: 10px;
+            font-size: 12px;
             padding: 6px 0;
             p{  
                 &:nth-child(2){
@@ -150,22 +151,22 @@
         }
     }
     .discount-price{
-        margin-top:13px;
+        margin-top:17px;
         padding-bottom: 15px;
         padding:0 10px; 
         span{
           float: left;
-          font-size: 15px;
+          font-size: 14px;
           &:last-child{
                 float: right;
                 p{
                     text-align: right;
                     &:first-child{
                         color: #ffb555;
-                        font-size:18px;
+                        font-size:17px;
                     }
                     &:last-child{
-                        margin-top: 10px;
+                        margin-top: 15px;
                     }
                 }
             }
@@ -241,9 +242,10 @@
             <p>粉币</p>
            <p>-￥10</p>
            </span>
-           <i class="close iconfont  icon-closezhuanhuan "></i>
+           <i class="close iconfont  icon-close"></i>
            <span><p>积分</p>
            <p>-￥10</p></span>
+           <i class="close"></i>
            <span><p>无门槛券</p>
            <p>-￥5</p></span>
        </div>

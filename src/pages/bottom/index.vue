@@ -15,7 +15,7 @@
             height: 60px;
             //padding:42px 50px;
             border-color:#ffb555;
-            font-size: 20px;
+            font-size: 17px;
             color: #ffb555;
         }
         .total{
@@ -23,7 +23,7 @@
             height: 60px;
             //padding:42px 112px;
             background-color:#ffb555;
-            font-size: 20px;
+            font-size: 17px;
             color: #fff;
         }
     }  
@@ -31,6 +31,7 @@
         float: right;
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 17px;
         .el-button{
             padding: 20px;
             color: #ffb555;

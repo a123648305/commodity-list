@@ -24,7 +24,7 @@ export default new Router({
             path: '/test',
             name: 'test',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/rightMenu/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/rightMenu/test'), // 
         },
       
     ]

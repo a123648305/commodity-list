@@ -36,7 +36,6 @@
             float: right;
         }
     }
-   
 }
 </style>
        
