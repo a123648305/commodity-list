@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+//    <!-- 左侧购物车 -->
 .leftlist{
     width:325px;
     left: 0;
@@ -197,6 +198,7 @@
 </style>
        
 <template>
+   <!-- 左侧购物车 -->
     <div class="leftlist">
        <div class="leftlist-top"><i class="menu iconfont icon-caidandianji-copy"></i>结账清单</div>
        <div class="leftlist-list">

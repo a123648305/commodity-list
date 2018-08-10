@@ -1,12 +1,11 @@
 <style lang="less" scoped>
-
+// 头部导航栏
 .tab{      
     margin-left:325px;
 	//width:600px;
     padding-top:17px;
     width:calc(100% - 430px);
     height:calc(100% - 80px);
-    //background-color: yellowgreen;
 	.tab_title{
 		font-size:0;     /*有间隙*/
 		width:600px;
@@ -42,6 +41,7 @@
             height: 55px;
         }
     }
+    // 显示内容
 	.tab_content{
         border:1px solid #ccc;
         border-left: none;
@@ -51,6 +51,7 @@
         padding-left: 10px;
         padding-right: 10px;
         height: calc(100% - 80px);
+        // 搜索框
         .search{
             //border:1px solid red;
             //background-color:#f5f5f5;
@@ -88,6 +89,7 @@
 
         }
     }
+    // 右导航栏
     .tab-right{
         right: 0;
         top: 72px;
@@ -136,6 +138,7 @@
        
 <template>
 <div>
+          <!-- 左侧购物车 -->
     <leftMenu></leftMenu>
 <div class="tab">
      <div class="shop"><span>当前门店：<span>谷通科技</span><i slot="suffix" class="iconfont icon-shuangxiang shuangxiang"></i></span></div>
@@ -191,6 +194,7 @@
 
          
 	</div>
+       <!-- 底部结算区 -->
        <bottom></bottom> 
 </div> 
 </template>

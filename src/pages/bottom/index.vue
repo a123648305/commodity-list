@@ -48,6 +48,7 @@
 </style>
 
 <template>
+   <!-- 底部 -->
     <div class="bottom">
          <div class="bottom-price">
             <el-button class="clear">清空</el-button>
