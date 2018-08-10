@@ -52,13 +52,32 @@
         padding-right: 10px;
         height: calc(100% - 80px);
         .search{
-            border:1px solid red;
-            background-color:#f5f5f5;
-            .saoma{
+            //border:1px solid red;
+            //background-color:#f5f5f5;
+            height:49px;
+            input{
+                width:92%;
+                height: 45px;
+                line-height: 45px;
+                padding-left:46px;
+                background-color: #f5f5f5;
+                
+            }
+            .search-left{
+                position: absolute;
+                font-size: 20px;
+                margin-left: 12px;
+                margin-top: 12px;
+            }
+           .search-right{
+               
                 font-size: 20px;
                 position: absolute;
-                top: 10px;
-                right: 10px;
+                right: 121px;
+                /* top: 10px; */
+                margin-top: -36px;
+                z-index: 999;
+                
             }
         }
         .content-list{
@@ -132,9 +151,13 @@
 		<!-- 内容 -->
 		<div class="tab_content">
             <div class="search">
-            <el-input placeholder="请输入商条码/拼音码/商品名称" >
+            <!-- <el-input placeholder="请输入商条码/拼音码/商品名称" >
         <i slot="prefix" class="el-input__icon el-icon-search"></i>
-          <i slot="suffix" class="iconfont icon-saoma saoma"></i></el-input></div>
+          <i slot="suffix" class="iconfont icon-saoma saoma"></i></el-input> -->
+          <span class="search-left iconfont icon-search"></span>
+          <input type="text" placeholder="请输入商条码/拼音码/商品名称" >
+          <span class="search-right iconfont icon-saoma"></span>
+          </div>
 			<!-- 根据curId的值显示div,分别对应 -->
 			<div class="content-list" v-show="curId===0"><commodity></commodity></div>
 			<div class="content-list" v-show="curId===1">无码商品</div>
