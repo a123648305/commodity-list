@@ -61,6 +61,7 @@
                 line-height: 45px;
                 padding-left:46px;
                 background-color: #f5f5f5;
+                border: none;
                 
             }
             .search-left{
