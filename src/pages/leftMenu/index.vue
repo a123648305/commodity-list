@@ -132,11 +132,22 @@
                     margin-top:7px;
                 }
             }
-            &:nth-child(3){
+            &:nth-child(2){
                 background-color: #f879b1;
             }
-             &:nth-child(4){
+             &:nth-child(3){
                 background-color: #ff7c54;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                margin-left: 31px;
+                margin-top: -50px;
+                background: url('../../assets/images/close.png') no-repeat center;
+                border-radius: 20px;
+                background-size: 100% 100%;
             }
            
         }
@@ -149,6 +160,7 @@
             background-color: #fff;
             border-radius:20px;
         }
+       
     }
     .discount-price{
         margin-top:17px;
@@ -242,10 +254,10 @@
             <p>粉币</p>
            <p>-￥10</p>
            </span>
-           <i class="close iconfont  icon-close"></i>
+           <!-- <i class="close iconfont  icon-close"></i> -->
            <span><p>积分</p>
            <p>-￥10</p></span>
-           <i class="close"></i>
+           
            <span><p>无门槛券</p>
            <p>-￥5</p></span>
        </div>

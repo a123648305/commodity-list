@@ -1,7 +1,12 @@
 <style lang="less" scoped>
  .main{
      
-     float: left;
+    position: relative;
+    width:100%;
+    height: 100%;
+    overflow:auto;
+    padding-right: 15px;
+    left: 0;
      .saoma{
         font-size: 20px;
         position: absolute;
@@ -174,24 +179,10 @@
                         
                         </div>
                         </li>
-                         <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluos.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p></div>
                         
-                        </div>
-                        </li>
-                         <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluom.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p></div>
+                       
+
                         
-                        </div>
-                        </li>
                 </ul>
     </div>
     </div>
@@ -202,7 +193,7 @@ export default {
     data() {
         return {
              isActive:false,
-             secondcss:true,       
+             secondcss:false,       
         }
     },
     computed: {},

@@ -9,7 +9,7 @@
         padding: 10px;
         border-right: 1px solid #f5f5f5;
         float: left;
-        width: 305px;
+        width: 304px;
         .clear{
             //width: 90px;
             height: 60px;
@@ -29,8 +29,8 @@
     }  
     .send-footer{
         float: right;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         font-size: 17px;
         .el-button{
             padding: 20px;

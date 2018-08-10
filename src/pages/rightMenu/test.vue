@@ -50,6 +50,7 @@
         padding-top:20px;
         padding-left: 10px;
         padding-right: 10px;
+        height: calc(100% - 80px);
         .search{
             border:1px solid red;
             background-color:#f5f5f5;
@@ -59,6 +60,12 @@
                 top: 10px;
                 right: 10px;
             }
+        }
+        .content-list{
+            height: 550px;
+            overflow:hidden;
+            //background: #bbb;
+
         }
     }
     .tab-right{
@@ -71,8 +78,17 @@
         font-size: 15px;
         height: calc(100% - 154px);
         border-top: 1px solid #e5e5e5; 
-        .el-menu-item{
-             border-bottom: 1px solid #e5e5e5;
+        ul{
+            background-color: #f5f5f5;
+            li{
+                height: 56px;
+                line-height: 56px;
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
+        .active{
+            background-color: #fff;
+            color: #ffb75a;
         }
     }
     .shop{
@@ -120,15 +136,15 @@
         <i slot="prefix" class="el-input__icon el-icon-search"></i>
           <i slot="suffix" class="iconfont icon-saoma saoma"></i></el-input></div>
 			<!-- 根据curId的值显示div,分别对应 -->
-			<div v-show="curId===0"><commodity></commodity></div>
-			<div v-show="curId===1">无码商品</div>
-			<div v-show="curId===2">Contact Content</div>
-			<div v-show="curId===3">MySpace Content</div>
-            <div v-show="curId===4">MySpace Content</div>
-            <div v-show="curId===5">oil 粮油</div>
-            <div v-show="curId===6">饮料</div>
-            <div v-show="curId===7"><img src="" alt="shuiguo"></div>
-            <div v-show="curId===8"><fruit></fruit></div>
+			<div class="content-list" v-show="curId===0"><commodity></commodity></div>
+			<div class="content-list" v-show="curId===1">无码商品</div>
+			<div class="content-list" v-show="curId===2">Contact Content</div>
+			<div class="content-list" v-show="curId===3">MySpace Content</div>
+            <div class="content-list" v-show="curId===4">MySpace Content</div>
+            <div class="content-list" v-show="curId===5">oil 粮油</div>
+            <div class="content-list" v-show="curId===6">饮料</div>
+            <div class="content-list" v-show="curId===7"><img src="" alt="shuiguo"></div>
+            <div class="content-list" v-show="curId===8"><fruit></fruit></div>
 		</div>
 
 
@@ -137,35 +153,15 @@
 
     <!-- //   右导航栏 -->
          <div class="tab-right">
-         <el-menu
-       :default-active="activeIndex"
-      class="el-menu-vertical-demo"
-     @select="handleSelect"
-      background-color="#f5f5f5"
-      text-color="#333"
-      active-text-color="#ffb14d">
-     <el-menu-item index="first"  @click="curId=0">      
-        <span slot="title">全部商品</span>
-      </el-menu-item>
-      <el-menu-item index="second" @click="curId=5">      
-        <span slot="title">粮油</span>
-      </el-menu-item>
-      <el-menu-item index="third" @click="curId=6">  
-        <span slot="title">饮料</span>
-      </el-menu-item>
-      <el-menu-item index="fourth" @click="curId=7">
-        <span slot="title">零食</span>
-      </el-menu-item>
-      <el-menu-item index="fifth" @click="curId=8">
-        <span slot="title">水果</span>
-      </el-menu-item>
-      <el-menu-item index="sixth">
-        <span slot="title">蔬菜</span>
-      </el-menu-item>
-      <el-menu-item index="seventh">
-        <span slot="title">饮料</span>
-      </el-menu-item>
-    </el-menu>
+        <ul>
+            <li :class="{'active':curId === 0}" @click="curId=0">全部商品</li>
+            <li :class="{'active':curId === 5}" @click="curId=5">粮油</li>
+            <li :class="{'active':curId === 6}" @click="curId=6">饮料</li>
+            <li :class="{'active':curId === 7}" @click="curId=7">零食</li>
+            <li :class="{'active':curId === 8}" @click="curId=8">水果</li>
+            <li :class="{'active':curId === 9}" @click="curId=9">蔬菜</li>
+            <li :class="{'active':curId === 10}" @click="curId=10">饮料</li>
+        </ul>
         </div>
 
 
