@@ -1,27 +1,23 @@
 <style lang="less" scoped>
-.leftlist{
-    width:650px;
-    height: 200px;
-    background-color: chartreuse;
-    left: 0;
-    .leftlist-top{
-        height: 160px;
-        &::before{
-            content: "";
-        }
-    }
-}
+
 </style>
        
 <template>
-    <div class="leftlist">
-       <div class="leftlist-top"></div>
-    </div>
+    
+   <div>
+       <leftMenu></leftMenu>
+       1111
+   </div>
 </template>
     
     
 <script>
+import leftMenu from './leftMenu/index'
+// import bottom from '../bottom/index'
+// import commodity from '../commodity/commodityList/index'
+// import fruit from '../commodity/commodityList/fruit'
 export default {
+    components:{leftMenu,commodity,bottom,fruit},
     data() {
         return {
 

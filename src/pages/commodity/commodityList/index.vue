@@ -27,7 +27,7 @@
                      position: absolute;
                      width: 33px;
                      height: 33px;
-                     background: url("../../assets/images/hot.png") no-repeat center;
+                     background: url("../../../assets/images/hot.png") no-repeat center;
                      background-size: 100% 100%;
                     }
                         
@@ -86,7 +86,7 @@
             <div class="main-content-1" :class="{ active: isActive }">
                 <ul class="list">
                     <li><div class="colo">
-                        <img class="colo-img" src="../../assets/images/kuoluos.png">
+                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -95,7 +95,7 @@
                         </div>
                         </li>
                     <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluom.png">
+                         <img class="colo-img" src="../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -104,7 +104,7 @@
                         </div>
                         </li>
                         <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluos.png">
+                         <img class="colo-img" src="../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -113,7 +113,7 @@
                         </div>
                         </li>
                         <li><div class="colo">
-                        <img class="colo-img" src="../../assets/images/kuoluom.png">
+                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -122,7 +122,7 @@
                         </div>
                         </li>
                          <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluos.png">
+                         <img class="colo-img" src="../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -131,7 +131,7 @@
                         </div>
                         </li>
                          <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluom.png">
+                         <img class="colo-img" src="../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -144,7 +144,7 @@
      <div class="main-content-2" :class="{ active:secondcss }">
                 <ul class="list">
                     <li><div class="colo">
-                        <img class="colo-img" src="../../assets/images/kuoluos.png">
+                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -153,7 +153,7 @@
                         </div>
                         </li>
                     <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluom.png">
+                         <img class="colo-img" src="../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -162,7 +162,7 @@
                         </div>
                         </li>
                         <li><div class="colo">
-                         <img class="colo-img" src="../../assets/images/kuoluos.png">
+                         <img class="colo-img" src="../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -171,7 +171,7 @@
                         </div>
                         </li>
                         <li><div class="colo">
-                        <img class="colo-img" src="../../assets/images/kuoluom.png">
+                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>

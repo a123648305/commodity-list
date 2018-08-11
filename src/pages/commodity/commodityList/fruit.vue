@@ -22,7 +22,7 @@
                      position: absolute;
                      width: 33px;
                      height: 33px;
-                     background: url("../../assets/images/hot.png") no-repeat center;
+                     background: url("../../../assets/images/hot.png") no-repeat center;
                      background-size: 100% 100%;
                     }
                         
