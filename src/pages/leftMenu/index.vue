@@ -13,8 +13,7 @@
         border-bottom: 1px solid #f5f5f5;
         padding:25px 10px;
         font-size:20px;
-        position: fixed;
-        top: 0; 
+        
         .menu{
             left:20px;
             top: 24px;
