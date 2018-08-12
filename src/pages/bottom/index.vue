@@ -5,6 +5,7 @@
     width: 100%;
     height: 80px;
     border: 1px solid #f5f5f5;
+    background-color: #fff;
     .bottom-price{
         padding: 10px;
         border-right: 1px solid #f5f5f5;

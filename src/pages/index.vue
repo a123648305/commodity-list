@@ -1,23 +1,26 @@
 <style lang="less" scoped>
-
+.home{
+    overflow: hidden;
+    min-height: 768px;
+}
 </style>
        
 <template>
     
-   <div>
-       <leftMenu></leftMenu>
-       1111
+   <div class="home">
+  
+       <commodity></commodity>
+       
    </div>
 </template>
     
     
 <script>
-// import leftMenu from './leftMenu/index'
-// import bottom from '../bottom/index'
-// import commodity from '../commodity/commodityList/index'
-// import fruit from '../commodity/commodityList/fruit'
+import leftMenu from '../pages/leftMenu/index'
+import bottom from '../pages/bottom/index'
+import commodity from '../pages/commodity/index'
 export default {
-    components:{leftMenu,commodity,bottom,fruit},
+    components:{leftMenu,commodity,bottom},
     data() {
         return {
 

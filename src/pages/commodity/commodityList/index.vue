@@ -15,7 +15,7 @@
      }
      .list{ 
             li{ 
-                //width:48%;
+                width:49%;
                 float: left;
                 margin-top: 10px;
                 border: 1px solid #e5e5e5;

@@ -7,8 +7,6 @@
     width:calc(100% - 430px);
     height:calc(100% - 80px);
 	.tab_title{
-		font-size:0;     /*有间隙*/
-		width:600px;
 		ul{  
             padding-left: 10px;
             li{
@@ -203,8 +201,8 @@
 <script>
 import leftMenu from '../leftMenu/index'
 import bottom from '../bottom/index'
-import commodity from '../commodity/index'
-import fruit from '../commodity/fruit'
+import commodity from '../commodity/commodityList/index'
+import fruit from '../commodity/commodityList/fruit'
 export default {
      components: {leftMenu, commodity,bottom,fruit},
     data() {
