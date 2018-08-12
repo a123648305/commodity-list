@@ -12,7 +12,7 @@
     
     
 <script>
-import leftMenu from './leftMenu/index'
+// import leftMenu from './leftMenu/index'
 // import bottom from '../bottom/index'
 // import commodity from '../commodity/commodityList/index'
 // import fruit from '../commodity/commodityList/fruit'
