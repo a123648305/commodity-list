@@ -1,12 +1,12 @@
 <style lang="less" scoped>
  .main{
      
-    position: relative;
-    width:100%;
-    height: 100%;
-    overflow:auto;
-    padding-right: 15px;
-    left: 0;
+    // position: relative;
+    // width:100%;
+    // height: 100%;
+    // overflow:auto;
+    // padding-right: 15px;
+    // left: 0;
      .saoma{
         font-size: 20px;
         position: absolute;
@@ -15,7 +15,31 @@
      }
      .list{ 
             li{ 
-                //width:49%;
+                @media screen and(max-width: 768px){
+                    width:99%;
+                }
+                @media screen and(min-width: 960px) and (max-width:1199px){
+                    width:48%;
+                    margin-left: 10px;
+                      &:nth-child(2n+1){
+                    margin-left: 0px;
+                }
+                }
+                @media screen and(min-width: 1200px) and(max-width: 1499px) {
+                    width:32%;
+                    margin-left: 10px;
+                     &:nth-child(3n+1){
+                    margin-left: 0px;
+                }
+                
+                }
+                 @media screen and(min-width: 1500px){
+                        width:24%;
+                        margin-left: 10px;
+                        &:nth-child(4n+1){
+                        margin-left: 0px;
+                    }
+                }
                 float: left;
                 margin-top: 10px;
                 border: 1px solid #e5e5e5;
@@ -32,14 +56,15 @@
                     }
                         
                 }
-                &:nth-child(2n){
-                    //margin-left: 10px;
-                    float: right;
-                }
+                // &:nth-child(2n){
+                //     margin-left: 10px;
+                //     //float: right;
+                //     float: left;
+                // }
                 
                     .colo{
                         float: left;
-                        padding: 15px 11px 15px 15px;
+                        padding: 15px 12px 15px 15px;
                         .colo-img{
                             width:80px;
                             height:80px;
@@ -53,8 +78,19 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         //width: 162px;
-                        max-width: 154px;
+                       
                         margin-left: 10px;
+                        @media screen and(max-width:768px) {
+                             max-width: 164px;
+                        }
+                         @media screen and(min-width:960px) and (max-width:1200px) {
+                             max-width: 127px;
+                        }
+                         @media screen and(min-width: 1200px)and(max-width: 1499px) {
+                             max-width:123px;
+                        }
+                         
+                        
                         p{ 
                             text-overflow: ellipsis; 
                             white-space :nowrap;
@@ -90,6 +126,60 @@
             <div class="main-content-1" :class="{ active: isActive }">
                 <ul class="list">
                     <li><div class="colo">
+                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>可口可乐樱桃味的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p></div>
+                        
+                        </div>
+                        </li>
+                    <li><div class="colo">
+                         <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>可口可乐樱桃味的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p></div>
+                        
+                        </div>
+                        </li>
+                        <li><div class="colo">
+                         <img class="colo-img" src="../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>可口可乐樱桃味的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p></div>
+                        
+                        </div>
+                        </li>
+                        <li><div class="colo">
+                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>可口可乐樱桃味的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p></div>
+                        
+                        </div>
+                        </li>
+                         <li><div class="colo">
+                         <img class="colo-img" src="../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>可口可乐樱桃味的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p></div>
+                        
+                        </div>
+                        </li>
+                         <li><div class="colo">
+                         <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>可口可乐樱桃味的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p></div>
+                        
+                        </div>
+                        </li>
+                         <li><div class="colo">
                         <img class="colo-img" src="../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
