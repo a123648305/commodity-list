@@ -15,7 +15,7 @@
      }
      .list{ 
             li{ 
-                width:49%;
+                //width:49%;
                 float: left;
                 margin-top: 10px;
                 border: 1px solid #e5e5e5;
@@ -53,6 +53,8 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         //width: 162px;
+                        max-width: 154px;
+                        margin-left: 10px;
                         p{ 
                             text-overflow: ellipsis; 
                             white-space :nowrap;

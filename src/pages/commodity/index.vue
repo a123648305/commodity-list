@@ -41,7 +41,6 @@
 	.tab_content{
         border-left: none;
         border-bottom: none;
-		min-height:400px;
         padding-top:10px;
         padding-left: 10px;
         padding-right: 10px;
@@ -82,7 +81,7 @@
         .content-list{
             height: calc(100% - 80px);
             overflow:hidden;
-            background: #bbb;
+            //background: #bbb;
 
         }
     }
