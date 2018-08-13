@@ -11,12 +11,13 @@
     .leftlist-top{     
         text-align: center;
         border-bottom: 1px solid #f5f5f5;
-        padding:25px 10px;
         font-size:20px;
-        
+        height: 62px;
+        color: "#333333";
+        line-height: 62px;
+        letter-spacing: 2px;    
         .menu{
             left:20px;
-            top: 24px;
             position: absolute;
             font-size: 22px;
             color: #ffb555;
@@ -31,9 +32,11 @@
                 list-style-type: none;
                 border-bottom: 1px solid #f5f5f5;
                 padding:15px 0px;
+                height:85px;
                 .list-left{
                     float: left;
                     font-size: 15px;
+                    letter-spacing: 1.5px;
                     p{  
                         color: #999;
                         margin-top: 15px;
@@ -51,6 +54,7 @@
                         margin-top: -4px;
                         margin-right: 5px;
                         font-size: 12px;
+                        letter-spacing: 1px;
                     }
                      .sign-red{
                         display: block;
@@ -63,6 +67,7 @@
                         margin-top: -4px;
                         margin-right: 5px;
                         font-size: 12px;
+                        letter-spacing: 1px;
                     }
                      .sign-free{
                         display: block;
@@ -76,20 +81,27 @@
                         margin-right: 5px;
                         border: 1px solid #ff3c3c;
                         font-size: 12px;
+                        letter-spacing: 1px;
                     }
                 }
                 .list-right{
                     //float: right;
                     text-align: right;
-                    p{
+                    p{ 
+                       letter-spacing: 1.5px;
                        &:first-child{
                            color: #ffb555;
                            font-size:17px;
+                           b{
+                               font-size: 13px;
+                               font-weight: normal;
+                           }
 
                        }
                        &:nth-child(2){
                            color: #999;
                            margin-top:10px;
+                           margin-bottom: 15px;
                            text-decoration:line-through;
                            font-size: 13px;
                            
@@ -97,21 +109,26 @@
                      
                     }
                     .list-right-number{
-                        margin-top: 12px;
                         font-size:17px;
+                        height: 29px;
+                        line-height: 29px;
                     }
                     .sub{
-                        font-size: 25px;
+                        font-size: 29px;
                         margin-right: 10px;
+                        border-Color: #e5e5e5;
                         
                     }
                     .add{
-                        font-size: 25px;
+                        font-size: 29px;
                         margin-left: 10px;
                         color: #fff;
                         border-radius: 50%;
                         background-color: #ffb555;
                         
+                    }
+                    .list-right-count{
+                        //margin-bottom: 10px;
                     }
         
                     
@@ -133,11 +150,11 @@
                    <span class="sign-yel">特价</span>丹麦蓝罐曲奇饼干...
                    <p>奶香味</p>
                </div>
-               <div class="list-right"><p>￥168</p>
+               <div class="list-right"><p><b>￥</b>168</p>
                <p>￥200</p>
                <div class="list-right-number">
-                   <span class="sub iconfont icon-jian" @click="sub"></span>
-                   <span>{{count}}</span>
+                   <span class="sub iconfont icon-jianshuliang" @click="sub"></span>
+                   <span class="list-right-count">{{count}}</span>
                    <span class="add iconfont icon-jia" @click="add"></span>
                </div>
                </div></li>
@@ -145,10 +162,10 @@
                    <span class="sign-yel">买赠</span>丹麦蓝罐曲奇饼干...
                    <p>奶香味</p>
                </div>
-               <div class="list-right"><p>￥168</p>
+               <div class="list-right"><p><b>￥</b>168</p>
                <p>￥200</p>
                <div class="list-right-number">
-                   <span class="sub iconfont icon-jian"></span>
+                    <span class="sub iconfont icon-jianshuliang" @click="sub"></span>
                     <span>1</span>
                    <span class="add iconfont icon-jia"></span>
                </div>
@@ -157,10 +174,10 @@
                    <span class="sign-red">8折</span>丹麦蓝罐曲奇饼干...
                    <p>奶香味</p>
                </div>
-               <div class="list-right"><p>￥168</p>
+               <div class="list-right"><p><b>￥</b>168</p>
                <p>￥200</p>
                <div class="list-right-number">
-                   <span class="sub iconfont icon-jian"></span>
+                    <span class="sub iconfont icon-jianshuliang" @click="sub"></span>
                     <span>1</span>
                    <span class="add iconfont icon-jia"></span>
                </div>
@@ -169,7 +186,7 @@
                    <span class="sign-free">赠</span>丹麦蓝罐曲奇饼干...
                    <p>奶香味</p>
                </div>
-               <div class="list-right"><p>￥0</p>
+               <div class="list-right"><p><b>￥</b>0</p>
                <p>￥200</p>
                <div class="list-right-number"> 
                     <span>1</span>

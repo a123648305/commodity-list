@@ -3,10 +3,11 @@
 .tab{      
     margin-left:325px;
 	//width:600px;
-    padding-top:17px;
     width:calc(100% - 430px);
     height:calc(100% - 80px);
 	.tab_title{
+        height: 62px;
+        border-bottom:1px solid #f5f5f5;
 		ul{  
             padding-left: 10px;
             li{
@@ -20,14 +21,8 @@
                 padding: 0 17px;
                 border: 1px solid #e5e5e5;
                 border-bottom: none;
-                overflow: hidden;
-                &:hover{
-                    height: 55px;
-                    //transition: height 0.2s;
-                    top: 0;
-                    line-height: 55px;
-                   
-                }
+                margin-top: 11px;
+                letter-spacing: 1.5px;
             }
         }
         .cur{
@@ -37,18 +32,19 @@
             font-size: 17px;
             border-bottom: none;
             height: 55px;
+            top: -5px;
+            position: relative;
         }
     }
     // 显示内容
 	.tab_content{
-        border:1px solid #ccc;
         border-left: none;
         border-bottom: none;
-		height:400px;
-        padding-top:20px;
+		min-height:400px;
+        padding-top:10px;
         padding-left: 10px;
         padding-right: 10px;
-        height: calc(100% - 80px);
+        //height: calc(100% - 80px);
         // 搜索框
         .search{
             //border:1px solid red;
@@ -90,14 +86,14 @@
     // 右导航栏
     .tab-right{
         right: 0;
-        top: 72px;
+        top: 62px;
         width: 106px;
         text-align:center;
         position: absolute;
         background-color:#f9f9f9;
         font-size: 15px;
-        height: calc(100% - 154px);
-        border-top: 1px solid #e5e5e5; 
+        height: calc(100% - 142px);
+        border-top: 1px solid #f5f5f5; 
         ul{
             background-color: #f5f5f5;
             li{
@@ -109,13 +105,14 @@
         .active{
             background-color: #fff;
             color: #ffb75a;
+            border-left: 1px solid #f5f5f5;
         }
     }
     .shop{
         width: 205px;
         height: 40px;
         background-color: #f5f5f5;
-        margin-top: 5px;
+        margin-top:14px;
         padding-left: 15px;
         padding-right: 10px;
         font-size: 16px;

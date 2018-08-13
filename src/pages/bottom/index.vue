@@ -3,29 +3,33 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 80px;
-    border: 1px solid #f5f5f5;
+    height: 79px;
+    border-top: 1px solid #f5f5f5;
     background-color: #fff;
+    
     .bottom-price{
         padding: 10px;
         border-right: 1px solid #f5f5f5;
         float: left;
-        width: 304px;
+        width: 305px;
         .clear{
-            //width: 90px;
+            width: 90px;
             height: 60px;
-            //padding:42px 50px;
             border-color:#ffb555;
             font-size: 17px;
             color: #ffb555;
+            border-radius: 2px;
         }
         .total{
+            float: right;
             width: 205px;
             height: 60px;
             //padding:42px 112px;
             background-color:#ffb555;
             font-size: 17px;
             color: #fff;
+            border-radius: 2px;
+            letter-spacing: 1.5px;
         }
     }  
     .send-footer{
@@ -38,6 +42,7 @@
             color: #ffb555;
             border-color: #ffb555;
             width: 120px;
+            letter-spacing: 1.5px;
             &:last-child{
                 margin-right: 10px;
                 

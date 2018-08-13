@@ -1,22 +1,26 @@
 <style lang="less" scoped>
 //    <!-- 优惠信息 -->
+.discount{
+    //height: 116px;
     .discount-card{
-        padding-top: 27px;
+        padding-top:25px;
         display: flex;
         justify-content:space-around;
         span{
             text-align: center;
             width: 85px;
-            //height: 45px;
+            height: 45px;
             background-color: #ffb555;
             color: #fff;
-            border-radius: 5px;
+            border-radius: 2px;
             font-size: 12px;
-            padding: 6px 0;
             p{  
+                line-height:18px;
+                letter-spacing: 1px;
+                margin-top: 4px;
                 &:nth-child(2){
-                    margin-top:7px;
-                }
+                    margin-top: 0;
+                } 
             }
             &:nth-child(2){
                 background-color: #f879b1;
@@ -49,12 +53,14 @@
        
     }
     .discount-price{
-        margin-top:17px;
-        padding-bottom: 15px;
-        padding:0 10px; 
+        margin-top:18px;
+        //padding-bottom: 15px;
+        padding:0 10px;
         span{
           float: left;
           font-size: 14px;
+          letter-spacing: 1.5px;
+          color: #333;
           &:last-child{
                 float: right;
                 p{
@@ -62,6 +68,10 @@
                     &:first-child{
                         color: #ffb555;
                         font-size:17px;
+                        b{
+                            font-weight: normal;
+                            font-size: 13px;
+                        }
                     }
                     &:last-child{
                         margin-top: 15px;
@@ -71,7 +81,7 @@
             &:first-child{
                 p{
                    &:last-child{
-                        margin-top: 10px;
+                        margin-top: 15px;
                     }
                 }
             }
@@ -79,12 +89,12 @@
           
         }
     }
-
+}
 </style>
        
 <template>
    <!-- 优惠信息 -->
-   <div>   
+   <div class="discount">   
        <div class="discount-card">
            <span>
             <p>粉币</p>
@@ -103,7 +113,7 @@
            
            </span>
            <span>
-           <p>￥266</p>
+           <p><b>￥</b>260</p>
            <p>￥20</p></span>
        </div>
    </div>
