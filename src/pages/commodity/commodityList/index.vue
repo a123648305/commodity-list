@@ -48,8 +48,8 @@
                         .colo-text{
                         //border: 1px solid red;
                         float: right;
-                        margin-left: 12px;
-                        letter-spacing: 1px;
+                        margin-left: 10px;
+                        letter-spacing: 1.5px;
                         
                         p{ 
                             text-overflow: ellipsis; 

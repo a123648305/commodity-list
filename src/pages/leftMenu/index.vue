@@ -24,15 +24,18 @@
         }
     }
     .leftlist-list{
-        height: calc(100% - 80px - 74px -80px);
+        height: calc(100% - 80px - 130px);//149
         overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display:none
+        }
         ul{
             padding: 0 10px;
             li{ //height:116px;
                 list-style-type: none;
                 border-bottom: 1px solid #f5f5f5;
                 padding:15px 0px;
-                height:85px;
+                //height:85px;
                 .list-left{
                     float: left;
                     font-size: 15px;

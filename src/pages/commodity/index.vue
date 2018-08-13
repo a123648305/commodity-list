@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+
 // 头部导航栏
 .tab{      
     margin-left:325px;
@@ -47,16 +48,19 @@
         //height: calc(100% - 80px);
         // 搜索框
         .search{
-            //border:1px solid red;
-            //background-color:#f5f5f5;
             height:49px;
             input{
-                width:92%;
+                width:calc(100% - 46px);
                 height: 45px;
                 line-height: 45px;
                 padding-left:46px;
                 background-color: #f5f5f5;
                 border: none;
+                &::-webkit-input-placeholder {
+                    color: #bbb;     
+                    font-size: 14px;
+                    letter-spacing: 1.5px;
+                 }
                 
             }
             .search-left{
@@ -70,7 +74,6 @@
                 font-size: 20px;
                 position: absolute;
                 right: 121px;
-                /* top: 10px; */
                 margin-top: -36px;
                 z-index: 999;
                 
@@ -93,7 +96,11 @@
         background-color:#f9f9f9;
         font-size: 15px;
         height: calc(100% - 142px);
-        border-top: 1px solid #f5f5f5; 
+        border-top: 1px solid #f5f5f5;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display:none
+            } 
         ul{
             background-color: #f5f5f5;
             li{
@@ -135,11 +142,11 @@
 </style>
        
 <template>
-<div>
+<div class="global">
           <!-- 左侧购物车 -->
     <leftMenu></leftMenu>
 <div class="tab">
-     <div class="shop">当前门店：<span>谷通科技</span><i slot="suffix" class="iconfont icon-shuangxiang shuangxiang"></i></span></div>
+     <div class="shop">当前门店：<span>谷通科技</span><i slot="suffix" class="iconfont icon-shuangxiang shuangxiang"></i></div>
 		<!-- 导航 -->
 		<div class="tab_title">
 			<!-- 点击设置curId的值 -->

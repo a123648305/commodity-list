@@ -1,7 +1,11 @@
 <style lang="less" scoped>
 //    <!-- 优惠信息 -->
 .discount{
-    //height: 116px;
+    bottom: 0;
+    position: absolute;
+    height: 149px;
+    //background-color: bisque;
+    width: 100%;
     .discount-card{
         padding-top:25px;
         display: flex;
