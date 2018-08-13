@@ -118,8 +118,11 @@
         font-size: 16px;
         line-height: 40px;     
         position: absolute;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         right:10px;
+        span{
+            font-size: 17px;
+        }
         .shuangxiang{
             font-size: 20px;
             float: right;
@@ -136,7 +139,7 @@
           <!-- 左侧购物车 -->
     <leftMenu></leftMenu>
 <div class="tab">
-     <div class="shop"><span>当前门店：<span>谷通科技</span><i slot="suffix" class="iconfont icon-shuangxiang shuangxiang"></i></span></div>
+     <div class="shop">当前门店：<span>谷通科技</span><i slot="suffix" class="iconfont icon-shuangxiang shuangxiang"></i></span></div>
 		<!-- 导航 -->
 		<div class="tab_title">
 			<!-- 点击设置curId的值 -->
