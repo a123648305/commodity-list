@@ -80,9 +80,9 @@
             }
         }
         .content-list{
-            height: 550px;
+            height: calc(100% - 80px);
             overflow:hidden;
-            //background: #bbb;
+            background: #bbb;
 
         }
     }

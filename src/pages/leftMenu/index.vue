@@ -6,23 +6,6 @@
     position: absolute;
     border-right: 1px solid #f5f5f5;
     height: calc(100% - 80px);
-    
-    
-    .leftlist-top{     
-        text-align: center;
-        border-bottom: 1px solid #f5f5f5;
-        font-size:20px;
-        height: 62px;
-        color: "#333333";
-        line-height: 62px;
-        letter-spacing: 2px;    
-        .menu{
-            left:20px;
-            position: absolute;
-            font-size: 22px;
-            color: #ffb555;
-        }
-    }
     .leftlist-list{
         height: calc(100% - 80px - 130px);//149
         overflow-y: scroll;
@@ -145,8 +128,9 @@
        
 <template>
    <!-- 左侧购物车 -->
+   <div>
     <div class="leftlist">
-       <div class="leftlist-top"><i class="menu iconfont icon-caidandianji-copy"></i>结账清单</div>
+       <leftListTop></leftListTop>
        <div class="leftlist-list">
            <ul>
                <li><div class="list-left">
@@ -200,15 +184,16 @@
        <discount-detil></discount-detil>
 
     </div>
-       
+   </div> 
     
 </template>
     
 
 <script>
+import leftListTop from '../leftMenu/leftListTop'
 import discountDetil from '../leftMenu/discountDetil'
 export default {
-    components:{discountDetil},
+    components:{discountDetil,leftListTop},
     data() {
         return {
             count:1,

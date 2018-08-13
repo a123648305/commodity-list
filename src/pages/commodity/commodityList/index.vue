@@ -46,11 +46,13 @@
                             
                         }
                         .colo-text{
-                        //border: 1px solid red;
                         float: right;
                         margin-left: 10px;
                         letter-spacing: 1.5px;
-                        
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        //width: 162px;
                         p{ 
                             text-overflow: ellipsis; 
                             white-space :nowrap;
