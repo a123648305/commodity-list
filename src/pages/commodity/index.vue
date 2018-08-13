@@ -81,7 +81,7 @@
         .content-list{
             //height: calc(100% - 80px);
             height: calc(100% - 200px);
-            width: calc(100% -444px);
+            width: calc(100% - 444px);
             overflow-y:scroll;
             //background: #bbb;
             position: absolute;
