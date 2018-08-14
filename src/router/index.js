@@ -21,10 +21,10 @@ export default new Router({
                 import ( /* webpackChunkName: "poster" */ '@/pages/bottom/index'), // 
         },
         {
-            path: '/test',
-            name: 'test',
+            path: '/left',
+            name: 'left',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/leftMenu/index'), // 
         },
       
     ]
