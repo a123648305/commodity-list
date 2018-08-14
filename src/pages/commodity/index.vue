@@ -147,9 +147,9 @@
 </style>
        
 <template>
-<div class="global">
-          <!-- 左侧购物车 -->
-    <leftMenu></leftMenu>
+<div>
+          <!-- 商品列表 -->
+    
 <div class="tab">
      <div class="shop">当前门店：<span>谷通科技</span><i slot="suffix" class="iconfont icon-shuangxiang shuangxiang"></i></div>
 		<!-- 导航 -->
@@ -204,19 +204,18 @@
 
          
 	</div>
-       <!-- 底部结算区 -->
-       <bottom></bottom> 
+  
 </div> 
 </template>
     
     
 <script>
-import leftMenu from '../leftMenu/index'
-import bottom from '../bottom/index'
+
+
 import commodity from '../commodity/commodityList/index'
 import fruit from '../commodity/commodityList/fruit'
 export default {
-     components: {leftMenu, commodity,bottom,fruit},
+     components: { commodity,fruit},
     data() {
         return {
                curId:1,

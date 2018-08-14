@@ -6,7 +6,7 @@ export default new Router({
             path: '/',
             name: 'index',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/pages/leftMenu/index'), // 登录
+                import ( /* webpackChunkName: "home" */ '@/pages/index'), // 登录
         },
         {
             path: '/list',

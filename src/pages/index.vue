@@ -1,17 +1,13 @@
 <style lang="less" scoped>
-.home{
-    overflow: hidden;
-    min-height: 768px;
-}
+
 </style>
        
 <template>
-    
-   <div class="home">
-  
+    <div>
+       <leftMenu></leftMenu>
        <commodity></commodity>
-       
-   </div>
+       <bottom></bottom>
+    </div>
 </template>
     
     
