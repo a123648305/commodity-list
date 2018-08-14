@@ -98,6 +98,9 @@
                         font-size:17px;
                         height: 29px;
                         line-height: 29px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
                     }
                     .sub{
                         font-size: 29px;
