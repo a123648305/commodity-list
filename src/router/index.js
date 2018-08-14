@@ -12,19 +12,19 @@ export default new Router({
             path: '/list',
             name: 'list',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/pages/commodity/index'), // 
+                import ( /* webpackChunkName: "home" */ '@/pages/template/commodity/index'), // 
         }, 
         {
             path: '/bottom',
             name: 'bottom',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/bottom/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/template/bottom/index'), // 
         },
         {
             path: '/left',
             name: 'left',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/leftMenu/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/template/leftMenu/index'), // 
         },
       
     ]

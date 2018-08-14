@@ -12,9 +12,9 @@
     
     
 <script>
-import leftMenu from '../pages/leftMenu/index'
-import bottom from '../pages/bottom/index'
-import commodity from '../pages/commodity/index'
+import leftMenu from '../pages/template/leftMenu/index'
+import bottom from '../pages/template/bottom/index'
+import commodity from '../pages/template/commodity/index'
 export default {
     components:{leftMenu,commodity,bottom},
     data() {

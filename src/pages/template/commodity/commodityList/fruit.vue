@@ -20,14 +20,14 @@
                 }
                 @media screen and(min-width: 960px) and (max-width:1199px) {
                     width: 48%;
-                    margin-left: 10px;
+                     margin-left: 14px;
                     &:nth-child(2n+1) {
                         margin-left: 0px;
                     }
                 }
                 @media screen and(min-width: 1200px) and(max-width: 1499px) {
                     width: 32%;
-                    margin-left: 10px;
+                     margin-left: 14px;
                     &:nth-child(3n+1) {
                         margin-left: 0px;
                     }
@@ -35,7 +35,7 @@
                 }
                 @media screen and(min-width: 1500px) {
                     width: 24%;
-                    margin-left: 10px;
+                    margin-left: 14px;
                     &:nth-child(4n+1) {
                         margin-left: 0px;
                     }
@@ -51,7 +51,7 @@
                         position: absolute;
                         width: 33px;
                         height: 33px;
-                        background: url("../../../assets/images/hot.png") no-repeat center;
+                        background: url("../../../../assets/images/hot.png") no-repeat center;
                         background-size: 100% 100%;
                     }
 
@@ -123,7 +123,106 @@
             <ul class="list">
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>水...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>果...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>水...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>蜜...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>桃...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>味...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>的...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
+                        <div class="colo-text">
+                            <p>新...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
+                        <div class="colo-text">
+                            <p>鲜...</p>
+                            <p>250ml</p>
+                            <p>￥2.5</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="colo">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -134,7 +233,7 @@
                 </li>
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -145,106 +244,7 @@
                 </li>
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
-                        <div class="colo-text">
-                            <p>可口可乐樱桃味的...</p>
-                            <p>250ml</p>
-                            <p>￥2.5</p>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -259,7 +259,7 @@
             <ul class="list">
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -270,7 +270,7 @@
                 </li>
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -281,7 +281,7 @@
                 </li>
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluos.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluos.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>
@@ -292,7 +292,7 @@
                 </li>
                 <li>
                     <div class="colo">
-                        <img class="colo-img" src="../../../assets/images/kuoluom.png">
+                        <img class="colo-img" src="../../../../assets/images/kuoluom.png">
                         <div class="colo-text">
                             <p>可口可乐樱桃味的...</p>
                             <p>250ml</p>

@@ -39,7 +39,7 @@
                 height: 20px;
                 margin-left: 31px;
                 margin-top: -50px;
-                background: url('../../assets/images/close.png') no-repeat center;
+                background: url('../../../assets/images/close.png') no-repeat center;
                 border-radius: 20px;
                 background-size: 100% 100%;
             }
