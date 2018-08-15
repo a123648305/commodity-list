@@ -6,25 +6,25 @@ export default new Router({
             path: '/',
             name: 'index',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/pages/index'), // 登录
+                import ( /* webpackChunkName: "home" */ '@/projectSchedule/template/login/index'), // 登录
         },
         {
             path: '/list',
             name: 'list',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/pages/template/commodity/index'), // 
+                import ( /* webpackChunkName: "home" */ '@/projectSchedule/template/detail/index'), // 
         }, 
         {
-            path: '/bottom',
+            path: '/plan',
             name: 'bottom',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/template/bottom/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/plan/index'), // 
         },
         {
-            path: '/left',
+            path: '/recent',
             name: 'left',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/template/leftMenu/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/recent/index'), // 
         },
       
     ]
