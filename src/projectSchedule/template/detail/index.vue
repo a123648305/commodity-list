@@ -62,12 +62,12 @@
             span{
                 &:first-child{
                     float: left;
-                    display: inline-block;
+                    
 
                 }
                 &:last-child{
                     float: right;
-                    display: inline-block;
+                    
 
                 }
             }
