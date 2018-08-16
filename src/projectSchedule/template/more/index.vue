@@ -13,6 +13,9 @@
             display: flex;
             align-items: center;
             box-sizing: border-box;
+            &:first-child{
+                margin-top: 0;
+            }
             
             i{ 
                 
@@ -73,7 +76,7 @@
                   <i class="iconfont icon-you"></i>
               </li>
               <li>
-                  <i class="iconfont icon-xiaohongshi"></i>
+                  <i class="iconfont icon-xiaohongshi1"></i>
                   <div class="more-content">
                       <p>多粉星球</p>
                       <p><b>9</b>项规划正在进行中</p>

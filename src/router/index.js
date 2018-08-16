@@ -24,7 +24,7 @@ export default new Router({
             path: '/recent',
             name: 'left',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/recent/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/recent/recent'), // 
         },
         {
             path: '/d',
@@ -37,6 +37,12 @@ export default new Router({
             name: 'more',
             component: () =>
                 import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/more/index'), // 
+        },
+        {
+            path: '/test',
+            name: 'more',
+            component: () =>
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/index'), // 
         },
       
       
