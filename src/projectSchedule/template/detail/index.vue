@@ -49,7 +49,7 @@
         //box-sizing: border-box;
         h1{
             font-size: 20px;
-            
+            font-weight: normal;
             color: #fff;
         }
         p{
