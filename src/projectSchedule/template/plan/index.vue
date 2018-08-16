@@ -1,21 +1,283 @@
 <style lang="less" scoped>
-.plan{
-    .plan-title{
-        .return{
-            transform:rotate(90deg);
-            -ms-transform:rotate(90deg); 	/* IE 9 */
-            -moz-transform:rotate(90deg); 	/* Firefox */
-            -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
-            -o-transform:rotate(90deg); 
+    .plan{
+        background-color: #000;
+        height: 100%;
+        position: absolute;
+        ul{
+            
+            margin-top: 20px;
+            letter-spacing: 1px;
+            li{
+                list-style-type: none;
+                padding-left: 10px;
+                padding-right: 14px;
+                font-size: 17px;
+                margin-top: 17px;
+                //border: 1px solid red;
+                height: 79px;
+                display: flex;
+                align-items: center;
+                .uptime{
+                    float: left;
+                    p{
+                        &:first-child{
+                            color: #fff;
+                            &::before{
+                                content: "#";
+                                font-size: 10px;
+                            }
+                        }
+                        &:last-child{
+                            color:#bdbdbd;
+                            font-size: 10px;
+                            margin-top:5px;
+                            
+                        }
+                        
+                    }
+                }
+                .upcontent{
+                    //background-color: #f5a623;
+                    border-bottom: 1px solid #946c05;
+                    //padding: 17px 0; 
+                    height: 79px;
+                    float: left; 
+                    margin-left:26px;
+                    display: flex;
+                    align-items: center;
+            
+                .upname{
+                    float: left;
+                    p{
+                        &:first-child{
+                            color: #fff;
+                           
+                        }
+                        &:last-child{
+                            color:#bdbdbd;
+                            font-size: 15px;
+                            margin-top:15px;
+                            
+                        }
+                        
+                    }
+                }
+                .delay-time{
+                    float: right;
+                    margin-left: 26px;
+                    p{
+                        &:first-child{
+                            font-Size: 20px;
+	                        color: #19c8a9;
+                            b{
+                                font-size: 17px;
+                            }
+                        }
+                        &:last-child{
+                            color:#bdbdbd;
+                            font-size: 15px;
+                            margin-top:5px;
+                            
+                        }
+                        
+                    }
+                }
+               
+                }
+                 .plan-right{
+                    float: right;
+                    display: flex;
+                    align-items: center;
+                    height:79px;
+                    i{
+                        color: #f5a623;
+                    }
+                }
+            }
         }
-    }
+        
+        
+    
 }
 </style>
        
 <template>
     <div>
+        <!-- 项目计划 -->
       <div class="plan">
-          <div class="plan-title"> <i class="iconfont icon-you return"></i></div>
+          <!-- 上线延误 -->
+          <div class="plan-list">
+             
+             <ul>
+                 <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>
+                     
+                     <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>
+
+                  <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>
+
+                      <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>
+
+                      <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>  
+
+                        <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>  
+                        <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="plan-right">
+                        <i class="iconfont icon-you "></i>
+                    </div>
+                 
+                
+                    </li>  
+                 
+             </ul>
+          </div>
       </div>
     </div>
 </template>

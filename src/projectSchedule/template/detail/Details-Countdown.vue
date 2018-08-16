@@ -99,7 +99,7 @@
                     width: 43px;
                     p{
                         &:first-child{
-                            color: #ff6767;
+                            color: #19c8a9;
                             font-size: 20px;
                             b{
                                 font-size: 17px;
@@ -160,6 +160,7 @@
                     padding-bottom: 7px;
                     width: 43px;
                     p{
+                        color: #19c8a9;
                         &:first-child{
                             font-size: 20px;
                             b{
@@ -202,7 +203,7 @@
               <div class="detail-uptime-content">
                   <span>2018年08月01日</span>
                   <span><p>8<b>天</b></p>
-                  <p>延误</p></span>
+                  <p>倒计时</p></span>
                   
                   </div>
           </div>
@@ -211,7 +212,7 @@
               <div class="detail-usetime-content">
                   <span>2018年08月01日</span>
                   <span><p>1<b>天</b></p>
-                  <p>延误</p></span>
+                  <p>倒计时</p></span>
                   
               
           </div>

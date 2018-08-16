@@ -30,8 +30,15 @@ export default new Router({
             path: '/d',
             name: 'left',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/Details-Countdown'), // 
         },
+        {
+            path: '/more',
+            name: 'more',
+            component: () =>
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/more/index'), // 
+        },
+      
       
     ]
 });
