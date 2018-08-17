@@ -39,8 +39,9 @@
         
         .login-box-text{
             color: #999;
-            font-size: 23px;
+            //font-size: 23px;
             letter-spacing: 1px;
+            font-size:28px;
             
         }
         .login-pwd{
@@ -67,21 +68,22 @@
                 //line-height: 20px;
                 padding-top: 30px;
                 .ck{
-                    color: #999;
+                    
                     font-size: 28px;
                 }
             }
             .show{
-                color: #999;
+                
                 position: absolute;
                 font-size: 30px;
                 z-index:10;
+                color: #999;
             }
         }
         .login-btn{
             //background-color: #fff;
             text-align: center;
-            margin-top: 100px;
+            margin-top: 90px;
             input{
                 width:236px;
                 height: 85px;
@@ -123,6 +125,7 @@
     }
     .eye{
         color: #f5a623;
+        font-size: 30px;
     }
 }
 </style>
@@ -140,7 +143,7 @@
                        <input type="text" value="" >    
                       <i class="iconfont icon-yanjing show"></i>
                           <div class="login-rember">
-                             <i class="ck" :class="{'iconfont icon-not_Selected-copy':isA,'iconfont icon-danxuanxuanzhong':!isA}" @click="toggle"></i>
+                             <i class="ck" :class="{'iconfont icon-not_Selected-copy':isA,'iconfont icon-danxuanxuanzhong eye':!isA}" @click="toggle"></i>
                               记住密码</div>
                 </div>
              <div class="login-btn"><input type="button" value="登录"   @click="showtip"/></div>
