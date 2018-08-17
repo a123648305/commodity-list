@@ -9,82 +9,84 @@
   
     
     .login-text{
-        font-size:27px;
-        letter-spacing: 4px;
+        font-size:40px;
+        letter-spacing: 2px;
         //border: 1px solid;
-        margin-top:150px;
+        margin-top:200px;
         text-align: center;
         color: #fff;
         //width: 100%;
+       
+        
     }
     .login-box{
         position: relative;
         //width:380px;
-        //height: 242px;
-        //width: 380px;
-        height: 242px;
-        margin-top:83px;
-        margin-left: 15px;
-        margin-right: 19px;
-        padding:50px 36px 0 35px;
+        height:364px;
+        //height:727px;
+        margin-top:125px;
+        margin-left:23px;
+        margin-right:29px;
+        padding:75px 55px 0 53px;
         box-sizing: border-box;
         background-color: #000;
-        border-radius: 20px;
+        border-radius: 30px;
         .mima{
             color: #999;
-            font-size: 15px;
+            font-size:23px;
         }
         
         .login-box-text{
             color: #999;
-            font-size: 15px;
+            font-size: 23px;
             letter-spacing: 1px;
             
         }
         .login-pwd{
             border: solid;
-            margin-top: 43px;
+            margin-top:65px;
             border: none;
-            height: 30px;
+            padding-top:13px;
+            padding-bottom:13px;
             border-bottom: 1px solid #fff;
             input{
                 border: none;
                 background-color: transparent;
                 color: #fff;
                 width: 93%;
-                height: 30px;
+                height: 32px;
                 
             }
             .login-rember{
-                color: #999;
+                color: #fff;
                 float: right;
                 //background-color:antiquewhite;
-                font-size: 16px;
+                font-size: 24px;
                 //line-height: 20px;
-                padding-top: 20px;
+                padding-top: 30px;
                 .ck{
                     color: #999;
-                    font-size: 16px;
+                    font-size: 28px;
                 }
             }
             .show{
                 color: #999;
                 position: absolute;
-                font-size: 20px;
+                font-size: 30px;
                 z-index:10;
             }
         }
         .login-btn{
             //background-color: #fff;
             text-align: center;
-            margin-top: 70px;
+            margin-top: 100px;
             input{
-                width: 157px;
-                height: 56px;
+                width:236px;
+                height: 85px;
                 background-color:#f5a623;
-                border-radius: 28px;
+                border-radius:42px;
                 border: none;
-                font-size: 20px;
+                font-size: 30px;
                 color: #fff;
                 letter-spacing: 1px;
 
@@ -94,19 +96,23 @@
 
     }
     .login-tip{
-        width: 200px;
-        height: 33px;
-        line-height: 33px;
-        font-size: 16px;
+        width: 300px;
+        height:50px;
+        line-height: 50px;
+        font-size:24px;
         letter-spacing: 1px;
         color: #fff;
         left: 0;
         right: 0;
         margin:0 auto;
-        margin-top:125px;
+        margin-top:145px;
         background-color:#000;
-        border-radius: 17px;
+        border-radius:25px;
         text-align: center;
+        opacity: 0.7;
+        text-align: center;
+        // bottom: 130px;
+        // position: absolute;;
 
     }
 }

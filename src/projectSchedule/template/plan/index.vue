@@ -8,33 +8,33 @@
              width: 100%;
                 text-align: center;
                 color: #fff;
-                font-size: 20px;
-                padding-left: 17px;
+                font-size: 30px;
+                padding-left:25px;
                 box-sizing: border-box;
-                margin-top:35px;
+                margin-top:53px;
                 i{
                     transform:rotate(180deg);
                     float: left;
-                    font-size: 17px;
+                    font-size: 25px;
                     
                 }
                 span{
-                    margin-left: -17px;
+                    margin-left: -25px;
                 }
             
         }
         ul{
             width: 100%;
-            margin-top: 20px;
+            margin-top: 30px;
             letter-spacing: 1px;
             li{
                 list-style-type: none;
-                padding-left: 10px;
-                padding-right: 14px;
-                font-size: 17px;
-                margin-top: 17px;
+                padding-left: 15px;
+                padding-right: 20px;
+                font-size: 25px;
+                margin-top: 25px;
                 //border: 1px solid red;
-                height: 79px;
+                //height: 128px;
                 display: flex;
                 align-items: center;
                 width: 100%;
@@ -42,17 +42,18 @@
                 .uptime{
                     float: left;
                     p{
+                        font-size: 25px;
                         &:first-child{
                             color: #fff;
                             &::before{
                                 content: "#";
-                                font-size: 10px;
+                                font-size: 15px;
                             }
                         }
                         &:last-child{
                             color:#bdbdbd;
-                            font-size: 10px;
-                            margin-top:5px;
+                            font-size: 15px;
+                            margin-top:8px;
                             
                         }
                         
@@ -62,24 +63,27 @@
                     //background-color: #f5a623;
                     border-bottom: 1px solid #946c05;
                     //padding: 17px 0; 
-                    height: 79px;
+                    //height:118px;
                     float: left; 
                     margin-left:26px;
                     display: flex;
                     align-items: center;
-                    width: 65%;
+                    width: 74%;
+                    padding-bottom: 25px;
+                    box-sizing: border-box;
             
                 .upname{
                     float: left;
-                    p{
+                    p{  
+                        
                         &:first-child{
                             color: #fff;
                            
                         }
                         &:last-child{
                             color:#bdbdbd;
-                            font-size: 15px;
-                            margin-top:15px;
+                            font-size: 22px;
+                            margin-top:25px;
                             
                         }
                         
@@ -87,20 +91,20 @@
                 }
                 .delay-time{
                     position: absolute;
-                    right: 30px;
-                    p{
+                    right: 44px;
+                    p{ 
                         &:first-child{
-                            font-Size: 20px;
+                            font-Size: 30px;
 	                        color: #19c8a9;
                             b{
-                                font-size: 17px;
+                                font-size: 25px;
                                 font-weight: normal;
                             }
                         }
                         &:last-child{
                             color:#bdbdbd;
-                            font-size: 10px;
-                            margin-top:5px;
+                            font-size: 15px;
+                            margin-top:8px;
                             
                         }
                         
@@ -109,13 +113,15 @@
                
                 }
                  .plan-right{
-                    float: right;
+                    position: absolute;
+                    right: 20px;
                     display: flex;
                     align-items: center;
-                    height:79px;
-                    margin-left: 8px;
+                    
+                    //margin-left: 8px;
                     i{
                         color: #916b05;
+                        font-size: 20px;
                     }
                 }
             }

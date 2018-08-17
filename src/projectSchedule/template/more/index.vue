@@ -1,15 +1,16 @@
 <style lang="less" scoped>
 .more{
-    padding:0 13px;
+    padding:0 20px;
     letter-spacing: 1px;
     ul{
         li{
             list-style-type: none;
-            height: 85px;
-            padding:20px 13px 20px 17px;
-            border-Radius: 7px;
+            height:127px;
+            padding-left:26px;
+            padding-right: 20px;
+            border-Radius: 10px;
             background-Color: #16151a;
-            margin-top: 17px;
+            margin-top: 25px;
             display: flex;
             align-items: center;
             box-sizing: border-box;
@@ -21,7 +22,7 @@
                 
                 color: #916b05;
                 &:first-child{
-                    font-size: 40px;
+                    font-size: 60px;
                     float: left;
                     color:#f59d41;
                     //color:rgb(233,102,75);
@@ -33,25 +34,26 @@
                 &:last-child{
                    // font-size: 40px;
                     //float: left;
-                    
-                    right: 27px;
+                    font-size: 20px;
+                    right: 40px;
                     position: absolute;
                 }
 
             }
             .more-content{
                 float: left;
-                margin-left: 21px;
+                margin-left: 32px;
                 p{
+                    font-size: 25px;
                     color: #fff;
                     &:last-child{
                         color: #bdbdbd;
-                        font-size: 15px;
+                        font-size: 22px;
                         margin-top: 15px;
                         b{
                             color:#19c8a9;
-                            font-size: 19px;
-                            margin-right: 10px;
+                            font-size: 28px;
+                            margin-right: 15px;
                             font-weight: normal;
                         }
                     }

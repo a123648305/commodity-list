@@ -30,7 +30,7 @@ export default new Router({
             path: '/d',
             name: 'left',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/Details-Countdown'), // 
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/index'), // 
         },
         {
             path: '/more',

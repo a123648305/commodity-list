@@ -5,8 +5,8 @@
     width: 100%;
     background-color: #000;
     .title{
-        margin-top: 35px;
-        padding:0 127px;
+        margin-top: 52px;
+        padding:0 190px;
         text-align: center;
         box-sizing: border-box;
         color: #fff;
@@ -14,7 +14,7 @@
             
             letter-spacing: 1px;
             //display:inline-block;
-            font-size: 20px;
+            font-size: 30px;
             float: left;
             &:last-child{
                 float: right;
@@ -23,11 +23,12 @@
     }
     .active{
         color:#f5a623;
-        border-bottom: 3px solid #f5a623;
+        border-bottom: 4px solid #f5a623;
+        padding-bottom: 7px;
         
     }
     .contentshow{
-        margin-top:96px;
+        margin-top:144px;
         
     }
 }

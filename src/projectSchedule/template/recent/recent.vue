@@ -1,18 +1,25 @@
 <style lang="less" scoped>
+
     .recent{
+        // height: 100%;
+        // width: 100%;
+        // position:absolute;
+        // background-color: #000;
         .recent-delay{
             .recent-delay-title{
                 color: #fff;
-                border-left: 7px solid #f5a623;
-                padding-left: 11px;
+                border-left: 10px solid #f5a623;
+                padding-left: 25px;
+                font-size: 30px;
             }
         }
          .recent-plan{
              margin-top: 36px;
             .recent-plan-title{
                 color: #fff;
-                border-left: 7px solid #f5a623;
-                padding-left: 11px;
+                border-left: 10px solid #f5a623;
+                padding-left: 25px;
+                font-size: 30px;
             }
             ul{
                 li{
@@ -22,17 +29,17 @@
                             // margin-left: 26px;
                             p{
                                 &:first-child{
-                                    font-Size: 20px;
+                                    font-Size: 30px;
                                     color: #19c8a9;
                                     b{
-                                        font-size: 17px;
+                                        font-size: 25px;
                                         font-weight: normal;
                                     }
                                 }
                                 &:last-child{
                                     color:#bdbdbd;
-                                    font-size: 10px;
-                                    margin-top:5px;
+                                    font-size: 15px;
+                                    margin-top:8px;
                                     
                                 }
                                 
@@ -50,33 +57,34 @@
 
         ul{
             width: 100%;
-            margin-top: 20px;
+            margin-top: 30px;
             letter-spacing: 1px;
             li{ 
                 list-style-type: none;
-                padding-left: 10px;
-                padding-right: 14px;
-                font-size: 17px;
-                margin-top: 17px;
+                padding-left: 15px;
+                padding-right: 20px;
+                font-size: 25px;
+                margin-top: 25px;
                 //border: 1px solid red;
-                height: 79px;
+                //height: 79px;
                 display: flex;
                 align-items: center;
                 width: 100%;
                 .uptime{
                     float: left;
                     p{
+                        font-size: 25px;
                         &:first-child{
                             color: #fff;
                             &::before{
                                 content: "#";
-                                font-size: 10px;
+                                font-size: 15px;
                             }
                         }
                         &:last-child{
                             color:#bdbdbd;
-                            font-size: 10px;
-                            margin-top:5px;
+                            font-size: 15px;
+                            margin-top:8px;
                             
                         }
                         
@@ -84,15 +92,16 @@
                 }
                 .upcontent{
                     //background-color: #f5a623;
-                    border-bottom: 1px solid #946c05;
+                    border-bottom: 2px solid #946c05;
                     //padding: 17px 0; 
-                    height: 79px;
+                    //height: 79px;
                     float: left; 
                     margin-left:26px;
                     display: flex;
                     align-items: center;
-                    width: 65%;
-            
+                    width: 74%;
+                    padding-bottom: 25px;
+                    box-sizing: border-box;
                 .upname{
                     float: left;
                     p{
@@ -102,8 +111,8 @@
                         }
                         &:last-child{
                             color:#bdbdbd;
-                            font-size: 15px;
-                            margin-top:15px;
+                            font-size: 22px;
+                            margin-top:25px;
                             
                         }
                         
@@ -113,20 +122,20 @@
                     // float: right;
                     // margin-left: 26px;
                     position: absolute;
-                    right: 30px;
+                    right: 44px;
                     p{
                         &:first-child{
-                            font-Size: 20px;
+                            font-Size: 30px;
 	                        color: #ff6767;
                             b{
-                                font-size: 17px;
+                                font-size: 25px;
                                 font-weight: normal;
                             }
                         }
                         &:last-child{
                             color:#bdbdbd;
-                            font-size: 10px;
-                            margin-top:5px;
+                            font-size: 15px;
+                            margin-top:8px;
                             
                         }
                         
@@ -138,10 +147,13 @@
                     float: right;
                     display: flex;
                     align-items: center;
-                    height:79px;
-                    margin-left: 8px;
+                    //height:79px;
+                    //margin-left: 8px;
+                    position: absolute;
+                    right: 20px;
                     i{
                         color: #916b05;
+                        font-size: 20px;
                     }
                 }
             }
