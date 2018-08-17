@@ -99,7 +99,7 @@
                     margin-left:26px;
                     display: flex;
                     align-items: center;
-                    width: 74%;
+                    width: 73%;
                     padding-bottom: 25px;
                     box-sizing: border-box;
                 .upname{
@@ -123,6 +123,7 @@
                     // margin-left: 26px;
                     position: absolute;
                     right: 44px;
+                    text-align: center;
                     p{
                         &:first-child{
                             font-Size: 30px;
@@ -246,7 +247,7 @@
                                 <p>新版后台、手机端、小程序</p>
                             </div>
                             <div class="delay-time plan-time">
-                                <p>4<b>天</b></p>
+                                <p>28<b>天</b></p>
                                 <p>倒计时</p> 
                             
                             </div>
@@ -272,7 +273,7 @@
                                 <p>手机端</p>
                             </div>
                             <div class="delay-time plan-time">
-                                <p>4<b>天</b></p>
+                                <p>31<b>天</b></p>
                                 <p>倒计时</p> 
                             
                             </div>
@@ -298,7 +299,7 @@
                                 <p>手机端</p>
                             </div>
                             <div class="delay-time plan-time">
-                                <p>4<b>天</b></p>
+                                <p>33<b>天</b></p>
                                 <p>倒计时</p> 
                             
                             </div>
@@ -321,7 +322,7 @@
                                 <p>新版后台</p>
                             </div>
                             <div class="delay-time plan-time">
-                                <p>4<b>天</b></p>
+                                <p>35<b>天</b></p>
                                 <p>倒计时</p> 
                             
                             </div>
@@ -344,7 +345,7 @@
                                 <p>新版后台、手机端、小程序</p>
                             </div>
                             <div class="delay-time plan-time">
-                                <p>4<b>天</b></p>
+                                <p>41<b>天</b></p>
                                 <p>倒计时</p> 
                             
                             </div>

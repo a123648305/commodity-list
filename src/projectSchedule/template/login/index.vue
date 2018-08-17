@@ -115,7 +115,14 @@
         text-align: center;
         // bottom: 130px;
         // position: absolute;;
+        display: none;
 
+    }
+    .showtip{
+        display: block;
+    }
+    .eye{
+        color: #f5a623;
     }
 }
 </style>
@@ -133,13 +140,13 @@
                        <input type="text" value="" >    
                       <i class="iconfont icon-yanjing show"></i>
                           <div class="login-rember">
-                             <i class="iconfont icon-not_Selected-copy ck"></i>
+                             <i class="ck" :class="{'iconfont icon-not_Selected-copy':isA,'iconfont icon-danxuanxuanzhong':!isA}" @click="toggle"></i>
                               记住密码</div>
                 </div>
-             <div class="login-btn"><input type="button" value="登录" /></div>
+             <div class="login-btn"><input type="button" value="登录"   @click="showtip"/></div>
                  
           </div>
-           <div class="login-tip">
+           <div class="login-tip" :class="{ showtip: tip }">
                密码错误，请重新输入
            </div>
       </div>
@@ -153,7 +160,8 @@ export default {
   
     data() {
         return {
-
+             tip:false,
+             isA:true,
         }
     },
     computed: {
@@ -163,6 +171,13 @@ export default {
 
     },
     methods: {
+       showtip(){
+           this.tip=true;
+       },
+       toggle(){
+           this.isA=!this.isA;
+           //console.log("111")
+       }
 
     },
 }

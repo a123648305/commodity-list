@@ -26,11 +26,9 @@
                     font-size: 60px;
                     float: left;
                     color:#f59d41;
-                    //color:rgb(233,102,75);
-                    // color: -webkit-linear-gradient(120deg, rgb(255,202,57), rgb(233,102,75)); /* Safari 5.1 - 6.0 */
-                    // color: -o-linear-gradient(120deg, rgb(255,202,57), rgb(233,102,75)); /* Opera 11.1 - 12.0 */
-                    // color: -moz-linear-gradient(120deg, rgb(255,202,57), rgb(233,102,75)); /* Firefox 3.6 - 15 */
-                    // color: linear-gradient(120deg, rgb(255,202,57), rgb(233,102,75)); /* 标准的语法 */
+                   background-image: -webkit-gradient( linear,0 0,0 bottom, from(rgb(231, 96, 77)),to(rgb(255, 202, 57)));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
                 &:last-child{
                    // font-size: 40px;
