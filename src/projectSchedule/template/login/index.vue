@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+//  <!-- 登录 -->
 .login{
     height: 100%;
     width: 100%;
@@ -121,6 +122,7 @@
        
 <template>
     <div>
+        <!-- 登录 -->
       <div class="login">
           <div class="login-text">输入密码查看项目进度</div>
           <div class="login-box">

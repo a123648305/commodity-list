@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+// 详情-倒计时
 .detail{
     letter-spacing: 1px;
     background-color:#000;
@@ -191,6 +192,7 @@
        
 <template>
     <div>
+        <!-- 详情-倒计时 -->
       <div class="detail">
           <div class="detail-title">
               <router-link to="/test">

@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+// <!-- 详情-延误 -->
 .detail{
     letter-spacing: 1px;
     background-color:#000;
@@ -190,6 +191,7 @@
        
 <template>
     <div>
+        <!-- 详情-延误 -->
       <div class="detail">
           <div class="detail-title"> <router-link to="/test">
                             <i class="iconfont icon-you"></i>
@@ -207,7 +209,7 @@
               <div class="detail-uptime-content">
                   <span>2018年08月01日</span>
                   <span><p>8<b>天</b></p>
-                  <p>倒计时</p></span>
+                  <p>延误</p></span>
                   
                   </div>
           </div>
@@ -216,7 +218,7 @@
               <div class="detail-usetime-content">
                   <span>2018年08月01日</span>
                   <span><p>1<b>天</b></p>
-                  <p>倒计时</p></span>
+                  <p>延误</p></span>
                   
               
           </div>

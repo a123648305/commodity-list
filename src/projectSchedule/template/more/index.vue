@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+// 更多
 .more{
     padding:0 20px;
     letter-spacing: 1px;
@@ -67,6 +68,7 @@
        
 <template>
     <div>
+        <!-- 更多 -->
       <div class="more">
           <ul>
               <li>
