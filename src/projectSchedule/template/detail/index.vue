@@ -16,7 +16,7 @@
             transform:rotate(180deg);
             float: left;
             font-size: 26px;
-            
+            color: #fff;
         }
         span{
             margin-left: -25px;
@@ -191,7 +191,9 @@
 <template>
     <div>
       <div class="detail">
-          <div class="detail-title"><i class="iconfont icon-you"></i><span>详情</span></div>
+          <div class="detail-title"> <router-link to="/test">
+                            <i class="iconfont icon-you"></i>
+                            </router-link><span>详情</span></div>
           <div class="startime">项目开始时间:2018-04-25</div>
           <div class="detail-content">
               <h1>多粉星球V1.0.0</h1>

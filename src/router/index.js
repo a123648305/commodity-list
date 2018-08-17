@@ -33,6 +33,12 @@ export default new Router({
                 import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/index'), // 
         },
         {
+            path: '/d2',
+            name: 'left',
+            component: () =>
+                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/Details-Countdown'), // 
+        },
+        {
             path: '/more',
             name: 'more',
             component: () =>

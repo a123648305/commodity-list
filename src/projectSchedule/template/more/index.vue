@@ -80,15 +80,15 @@
               <li>
                   <i class="iconfont icon-xiaohongshi1"></i>
                   <div class="more-content">
-                      <p>多粉星球</p>
-                      <p><b>9</b>项规划正在进行中</p>
+                      <p>小红十</p>
+                      <p><b>4</b>项规划正在进行中</p>
                   </div>
                   <i class="iconfont icon-you"></i>
               </li>
               <li>
                   <i class="iconfont icon-jiaoyu"></i>
                   <div class="more-content">
-                      <p>多粉星球</p>
+                      <p>教育</p>
                       <p><b>9</b>项规划正在进行中</p>
                   </div>
                   <i class="iconfont icon-you"></i>
@@ -96,7 +96,7 @@
               <li>
                   <i class="iconfont icon-mohe"></i>
                   <div class="more-content">
-                      <p>多粉星球</p>
+                      <p>魔盒</p>
                       <p><b>9</b>项规划正在进行中</p>
                   </div>
                   <i class="iconfont icon-you"></i>
@@ -104,7 +104,7 @@
               <li>
                   <i class="iconfont icon-shangcheng"></i>
                   <div class="more-content">
-                      <p>多粉星球</p>
+                      <p>商城</p>
                       <p><b>9</b>项规划正在进行中</p>
                   </div>
                   <i class="iconfont icon-you"></i>

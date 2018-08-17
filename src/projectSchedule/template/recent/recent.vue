@@ -190,7 +190,11 @@
                    
                  </div>
                   <div class="recent-right">
-                        <i class="iconfont icon-you "></i>
+                        
+                            <router-link to="/d">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
+                        
                     </div>
                  
                 
@@ -214,7 +218,9 @@
                    
                  </div>
                   <div class="recent-right">
-                        <i class="iconfont icon-you "></i>
+                        <router-link to="/d">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
                     </div>
                  
                 
@@ -247,7 +253,9 @@
                         
                         </div>
                         <div class="recent-right">
-                                <i class="iconfont icon-you "></i>
+                               <router-link to="/d2">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
                             </div>
                  
                 
@@ -271,7 +279,9 @@
                         
                         </div>
                         <div class="recent-right">
-                                <i class="iconfont icon-you "></i>
+                                 <router-link to="/d2">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
                             </div>
                  
                 

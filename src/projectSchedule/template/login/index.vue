@@ -48,13 +48,14 @@
             border: none;
             padding-top:13px;
             padding-bottom:13px;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #e2e2e2;
             input{
                 border: none;
                 background-color: transparent;
                 color: #fff;
                 width: 93%;
                 height: 32px;
+                //line-height: 32px;
                 
             }
             .login-rember{
