@@ -1,6 +1,6 @@
 <style lang="less" scoped>
 // 近期
-    .recent{
+    .projectSchedule-recent-index{
         // height: 100%;
         // width: 100%;
         // position:absolute;
@@ -64,7 +64,7 @@
                 padding-left: 15px;
                 padding-right: 20px;
                 font-size: 25px;
-                margin-top: 25px;
+                //margin-top: 25px;
                 //border: 1px solid red;
                 //height: 79px;
                 display: flex;
@@ -101,10 +101,15 @@
                     align-items: center;
                     width: 73%;
                     padding-bottom: 25px;
+                    padding-top: 25px;
                     box-sizing: border-box;
                 .upname{
                     float: left;
-                    p{
+                    width: 92%;
+                    p{  
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                         &:first-child{
                             color: #fff;
                            
@@ -165,7 +170,7 @@
 <template>
     <div>
         <!-- 近期-->
-      <div class="recent">
+      <div class="projectSchedule-recent-index">
           <!-- 上线延误 -->
           <div class="recent-delay">
           <div class="recent-delay-title">
@@ -225,7 +230,107 @@
                     </div>
                  
                 
-                    </li>                 
+                    </li>
+                    <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="recent-right">
+                        <router-link to="/d">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
+                    </div>
+                 
+                
+                    </li>  
+                    <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="recent-right">
+                        <router-link to="/d">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
+                    </div>
+                 
+                
+                    </li>  
+                    <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="recent-right">
+                        <router-link to="/d">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
+                    </div>
+                 
+                
+                    </li>  
+                    <li>
+                    <div class="uptime">
+                        <p>8月10日</p>
+                        <p>原定测试上线</p>
+                    </div>
+                 <div class="upcontent">
+                    <div class="upname">
+                        <p>小红十V1.0.0</p>
+                        <p>新版后台、手机端、小程序</p>
+                    </div>
+                    <div class="delay-time">
+                        <p>4<b>天</b></p>
+                        <p>倒计时</p> 
+                       
+                    </div>
+                   
+                 </div>
+                  <div class="recent-right">
+                        <router-link to="/d">
+                            <i class="iconfont icon-you "></i>
+                            </router-link>
+                    </div>
+                 
+                
+                    </li>                   
              </ul>
           </div>
 

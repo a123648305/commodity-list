@@ -1,6 +1,6 @@
 <style lang="less" scoped>
 // 项目规划
-    .plan{
+    .projectSchedule-plan-index{
         background-color: #000;
         height: 100%;
         width: 100%;
@@ -24,7 +24,8 @@
                 }
             
         }
-        ul{
+        ul{ 
+            //overflow-y: scroll;
             width: 100%;
             margin-top: 30px;
             letter-spacing: 1px;
@@ -33,7 +34,7 @@
                 padding-left: 15px;
                 padding-right: 20px;
                 font-size: 25px;
-                margin-top: 25px;
+                //margin-top: 25px;
                 //border: 1px solid red;
                 //height: 128px;
                 display: flex;
@@ -70,13 +71,17 @@
                     display: flex;
                     align-items: center;
                     width: 73%;
+                    padding-top: 25px;
                     padding-bottom: 25px;
                     box-sizing: border-box;
             
                 .upname{
                     float: left;
+                    width: 90%;
                     p{  
-                        
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                         &:first-child{
                             color: #fff;
                            
@@ -129,6 +134,9 @@
             }
         }
         
+    .plan-list{
+        background-color: #000;
+    }
         
     
 }
@@ -137,7 +145,7 @@
 <template>
     <div>
         <!-- 项目计划 -->
-      <div class="plan">
+      <div class="projectSchedule-plan-index">
          <div class="plan-title">
              <i class="iconfont icon-you"></i><span>小红十项目研发规划</span>
          </div>
@@ -287,7 +295,7 @@
                  
                 
                     </li>  
-                        <li>
+                        <li v-for="item in 10" :key="item">
                     <div class="uptime">
                         <p>8月10日</p>
                         <p>原定测试上线</p>

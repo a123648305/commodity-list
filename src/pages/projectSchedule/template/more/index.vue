@@ -1,6 +1,6 @@
 <style lang="less" scoped>
 // 更多
-.more{
+.projectSchedule-more-index{
     padding:0 20px;
     letter-spacing: 1px;
     ul{
@@ -42,9 +42,15 @@
             .more-content{
                 float: left;
                 margin-left: 32px;
+                width: 82%;
+                
+                
                 p{
                     font-size: 25px;
                     color: #fff;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                     &:last-child{
                         color: #bdbdbd;
                         font-size: 22px;
@@ -67,12 +73,12 @@
 <template>
     <div>
         <!-- 更多 -->
-      <div class="more">
+      <div class="projectSchedule-more-index">
           <ul>
               <li>
                   <i class="iconfont icon-duofenxingqiu"></i>
                   <div class="more-content">
-                      <p>多粉星球</p>
+                      <p>多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球</p>
                       <p><b>9</b>项规划正在进行中</p>
                   </div>
                   <i class="iconfont icon-you"></i>

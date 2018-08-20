@@ -1,6 +1,6 @@
 <style lang="less" scoped>
 // 详情-倒计时
-.detail{
+.projectSchedule-detail-countDown{
     letter-spacing: 1px;
     background-color:#000;
     height: 100%;
@@ -193,7 +193,7 @@
 <template>
     <div>
         <!-- 详情-倒计时 -->
-      <div class="detail">
+      <div class="projectSchedule-detail-countDown">
           <div class="detail-title">
               <router-link to="/test">
                     <i class="iconfont icon-you"></i>

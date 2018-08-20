@@ -9,7 +9,10 @@
         text-align: center;
         box-sizing: border-box;
         color: #fff;
-        background-color:#252629;
+        background: -webkit-linear-gradient(rgb(44,45,49), rgb(16,16,19)); 
+        background: -o-linear-gradient(rgb(44,45,49), rgb(16,16,19)); 
+        background: -moz-linear-gradient(rgb(44,45,49), rgb(16,16,19)); 
+        background: linear-gradient(rgb(44,45,49), rgb(16,16,19)); 
         //background-color: rgb(16,16,19);
         opacity: 0.9;
         height: 81px;
@@ -36,6 +39,8 @@
     }
     .contentshow{
         margin-top:51px;
+        //overflow-y:auto;
+        background-color: #000;
         
     }
 }

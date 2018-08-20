@@ -1,6 +1,6 @@
 <style lang="less" scoped>
 // <!-- 详情-延误 -->
-.detail{
+.projectSchedule-detail-delay{
     letter-spacing: 1px;
     background-color:#000;
     height: 100%;
@@ -192,7 +192,7 @@
 <template>
     <div>
         <!-- 详情-延误 -->
-      <div class="detail">
+      <div class="projectSchedule-detail-delay">
           <div class="detail-title"> 
                             <i class="iconfont icon-you" @click="backpage"></i>
                             

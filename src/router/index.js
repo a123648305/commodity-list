@@ -9,12 +9,6 @@ export default new Router({
                 import ( /* webpackChunkName: "login" */ '@/pages/projectSchedule/template/login/index'), // 登录
         },
         {
-            path: '/list',
-            name: 'list',
-            component: () =>
-                import ( /* webpackChunkName: "list" */ '@/pages/projectSchedule/template/detail/index'), // 
-        }, 
-        {
             path: '/plan',
             name: 'plan',
             component: () =>
@@ -30,13 +24,13 @@ export default new Router({
             path: '/detail-delay',
             name: 'detail-delay',
             component: () =>
-                import ( /* webpackChunkName: "detail-delay" */ '@/pages/projectSchedule/template/detail/index'), // 
+                import ( /* webpackChunkName: "detail-delay" */ '@/pages/projectSchedule/template/detail/delay'), // 
         },
         {
             path: '/detail-Countdown',
             name: 'detail-Countdown',
             component: () =>
-                import ( /* webpackChunkName: "detail-Countdown" */ '@/pages/projectSchedule/template/detail/Details-Countdown'), // 
+                import ( /* webpackChunkName: "detail-Countdown" */ '@/pages/projectSchedule/template/detail/Countdown'), // 
         },
         {
             path: '/more',
