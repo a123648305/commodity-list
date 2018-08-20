@@ -4,7 +4,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    background: url("../../../assets/images/bk.jpg") no-repeat center;
+    //background: url("../../../../assets/images/bk.jpg") no-repeat center;
     background-size: 100% 100%;
     background-color:rgba(0, 0,0,0.5);
   
@@ -143,7 +143,7 @@
                        <input type="text" value="" >    
                       <i class="iconfont icon-yanjing show"></i>
                           <div class="login-rember">
-                             <i class="ck" :class="{'iconfont icon-not_Selected-copy':isA,'iconfont icon-danxuanxuanzhong eye':!isA}" @click="toggle"></i>
+                             <i class="ck" :class="{'iconfont icon-not_Selected-copy':selecd,'iconfont icon-danxuanxuanzhong eye':!selecd}" @click="toggle"></i>
                               记住密码</div>
                 </div>
              <div class="login-btn"><input type="button" value="登录"   @click="showtip"/></div>
@@ -164,7 +164,7 @@ export default {
     data() {
         return {
              tip:false,
-             isA:true,
+             selecd:true,
         }
     },
     computed: {

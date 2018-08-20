@@ -4,51 +4,51 @@ Vue.use(Router);
 export default new Router({
     routes: [{
             path: '/',
-            name: 'index',
+            name: 'login',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/projectSchedule/template/login/index'), // 登录
+                import ( /* webpackChunkName: "login" */ '@/pages/projectSchedule/template/login/index'), // 登录
         },
         {
             path: '/list',
             name: 'list',
             component: () =>
-                import ( /* webpackChunkName: "home" */ '@/projectSchedule/template/detail/index'), // 
+                import ( /* webpackChunkName: "list" */ '@/pages/projectSchedule/template/detail/index'), // 
         }, 
         {
             path: '/plan',
-            name: 'bottom',
+            name: 'plan',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/plan/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/plan/index'), // 
         },
         {
             path: '/recent',
-            name: 'left',
+            name: 'recent',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/recent/recent'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/recent/recent'), // 
         },
         {
-            path: '/d',
-            name: 'left',
+            path: '/detail-delay',
+            name: 'detail-delay',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/index'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/detail/index'), // 
         },
         {
-            path: '/d2',
-            name: 'left',
+            path: '/detail-Countdown',
+            name: 'detail-Countdown',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/detail/Details-Countdown'), // 
+                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/detail/Details-Countdown'), // 
         },
         {
             path: '/more',
             name: 'more',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/template/more/index'), // 
+                import ( /* webpackChunkName: "more" */ '@/pages/projectSchedule/template/more/index'), // 
         },
         {
             path: '/test',
-            name: 'more',
+            name: 'test',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/projectSchedule/index'), // 
+                import ( /* webpackChunkName: "test" */ '@/pages/projectSchedule/index'), // 
         },
       
       

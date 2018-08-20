@@ -6,19 +6,26 @@
     background-color: #000;
     .title{
         margin-top: 52px;
-        padding:0 190px;
         text-align: center;
         box-sizing: border-box;
         color: #fff;
+        background-color:#252629;
+        //background-color: rgb(16,16,19);
+        opacity: 0.9;
+        height: 81px;
+        padding:0 191px;
+         padding-top: 35px;
         span{
             
             letter-spacing: 1px;
             //display:inline-block;
             font-size: 30px;
-            float: left;
+          
+            bottom: 0px;
             &:last-child{
-                float: right;
+                margin-left: 124px;
             }
+        
         }
     }
     .active{
@@ -28,7 +35,7 @@
         
     }
     .contentshow{
-        margin-top:144px;
+        margin-top:51px;
         
     }
 }
