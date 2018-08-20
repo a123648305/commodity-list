@@ -50,6 +50,7 @@
                     color: #fff;
                     width: 93%;
                     height: 32px; //line-height: 32px;
+                    outline:none;
                 }
                 .login-rember {
                     color: #fff;
@@ -61,12 +62,17 @@
                         font-size: 28px;
                     }
                 }
-                .show {
+                .show{
 
                     position: absolute;
                     font-size: 30px;
                     z-index: 10;
                     color: #999;
+                }
+                .showpwd{
+                    color: #f5a623;
+                    font-size: 30px;
+                    z-index: 10;
                 }
             }
             .login-btn {
@@ -82,6 +88,7 @@
                     font-size: 30px;
                     color: #fff;
                     letter-spacing: 1px;
+                   
 
                 }
             }
@@ -102,7 +109,7 @@
             background-color: #000;
             border-radius: 25px;
             text-align: center;
-            opacity: 0.7;
+            //opacity: 0.7;
             text-align: center; // bottom: 130px;
             // position: absolute;;
             display: none;
@@ -128,8 +135,8 @@
                 <span class="login-box-text">请输入密码</span>
 
                 <div class="login-pwd">
-                    <input type="text" value="">
-                    <i class="iconfont icon-yanjing show"></i>
+                    <input  v-model="pwd" :type="pwdType" >
+                    <i class="iconfont icon-yanjing show" :class="{'showpwd':spwd}"  @click="showpwd"></i>
                     <div class="login-rember">
                         <i class="ck" :class="{'iconfont icon-not_Selected-copy':rempwd,'iconfont icon-danxuanxuanzhong eye':!rempwd}" @click="toggle"></i>
                         记住密码</div>
@@ -155,6 +162,9 @@
             return {
                 tip: false,
                 rempwd: false,
+                pwdType:'password',
+                pwd:'',
+                spwd:false
             }
         },
         computed: {
@@ -166,6 +176,13 @@
         methods: {
             showtip() {
                 this.tip = true;
+                
+                console.log(this.pwdType);
+            },
+            showpwd(){
+              this.pwdType = this.pwdType==='password'?'text':'password';
+              this.spwd=!this.spwd;
+
             },
             toggle() {
                 //console.log("111")
