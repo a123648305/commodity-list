@@ -18,25 +18,25 @@ export default new Router({
             path: '/plan',
             name: 'plan',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/plan/index'), // 
+                import ( /* webpackChunkName: "plan" */ '@/pages/projectSchedule/template/plan/index'), // 
         },
         {
             path: '/recent',
             name: 'recent',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/recent/recent'), // 
+                import ( /* webpackChunkName: "recent" */ '@/pages/projectSchedule/template/recent/recent'), // 
         },
         {
             path: '/detail-delay',
             name: 'detail-delay',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/detail/index'), // 
+                import ( /* webpackChunkName: "detail-delay" */ '@/pages/projectSchedule/template/detail/index'), // 
         },
         {
             path: '/detail-Countdown',
             name: 'detail-Countdown',
             component: () =>
-                import ( /* webpackChunkName: "poster" */ '@/pages/projectSchedule/template/detail/Details-Countdown'), // 
+                import ( /* webpackChunkName: "detail-Countdown" */ '@/pages/projectSchedule/template/detail/Details-Countdown'), // 
         },
         {
             path: '/more',
