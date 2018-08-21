@@ -1,6 +1,6 @@
-import home from '@/pages/home/store/index'
+// import home from '@/pages/home/store/index'
 
-const modules = {
-    home,
-}
-export default modules
+// const modules = {
+//     home,
+// }
+// export default modules

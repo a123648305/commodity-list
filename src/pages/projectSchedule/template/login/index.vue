@@ -51,15 +51,18 @@
                     width: 93%;
                     height: 32px; //line-height: 32px;
                     outline:none;
+                    font-size: 30px;
+                    letter-spacing: 4px;
                 }
                 .login-rember {
                     color: #fff;
                     float: right; //background-color:antiquewhite;
                     font-size: 24px; //line-height: 20px;
-                    padding-top: 30px;
+                    margin-top: 30px;
                     .ck {
 
                         font-size: 28px;
+                        margin-right: 10px;
                     }
                 }
                 .show{
@@ -99,7 +102,7 @@
             width: 300px;
             height: 50px;
             line-height: 50px;
-            font-size: 24px;
+            font-size: 26px;
             letter-spacing: 1px;
             color: #fff;
             left: 0;
@@ -118,6 +121,9 @@
         .showtip {
             display: block;
         }
+        .icon-not_Selected-copy{
+            font-size: 40px;
+        }
         .eye {
             color: #f5a623;
             font-size: 30px;
@@ -135,10 +141,10 @@
                 <span class="login-box-text">请输入密码</span>
 
                 <div class="login-pwd">
-                    <input   :type="pwdType" >
+                    <input  v-model="pwd" :type="pwdType" >
                     <i class="iconfont icon-yanjing show" :class="{'showpwd':spwd}"  @click="showpwd"></i>
                     <div class="login-rember">
-                        <i class="ck" :class="{'iconfont icon-not_Selected-copy':rempwd,'iconfont icon-danxuanxuanzhong eye':!rempwd}" @click="toggle"></i>
+                        <i class="ck" :class="{'iconfont icon-yuanquan':rempwd,'iconfont icon-xuanzhong1 eye':!rempwd}" @click="toggle"></i>
                         记住密码</div>
                 </div>
                 <div class="login-btn">
@@ -163,7 +169,8 @@
                 tip: false,
                 rempwd: false,
                 pwdType:'password',
-                spwd:false
+                spwd:false,
+                pwd:'12345',
             }
         },
         computed: {
