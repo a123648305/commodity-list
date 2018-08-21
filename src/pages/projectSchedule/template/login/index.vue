@@ -135,7 +135,7 @@
                 <span class="login-box-text">请输入密码</span>
 
                 <div class="login-pwd">
-                    <input  v-model="pwd" :type="pwdType" >
+                    <input   :type="pwdType" >
                     <i class="iconfont icon-yanjing show" :class="{'showpwd':spwd}"  @click="showpwd"></i>
                     <div class="login-rember">
                         <i class="ck" :class="{'iconfont icon-not_Selected-copy':rempwd,'iconfont icon-danxuanxuanzhong eye':!rempwd}" @click="toggle"></i>
@@ -163,7 +163,6 @@
                 tip: false,
                 rempwd: false,
                 pwdType:'password',
-                pwd:'',
                 spwd:false
             }
         },
