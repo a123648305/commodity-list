@@ -180,7 +180,7 @@
                         </div>
                         <div class="recent-right">
 
-                            <router-link to="/d">
+                            <router-link to="/detail-Delay">
                                 <i class="iconfont icon-you "></i>
                             </router-link>
 
@@ -208,7 +208,7 @@
                         </div>
                         <div class="recent-right">
 
-                            <router-link to="/d">
+                            <router-link to="/detail-Delay">
                                 <i class="iconfont icon-you "></i>
                             </router-link>
 
@@ -247,7 +247,7 @@
 
                         </div>
                         <div class="recent-right">
-                            <router-link to="/d2">
+                            <router-link to="/detail-Countdown">
                                 <i class="iconfont icon-you "></i>
                             </router-link>
                         </div>

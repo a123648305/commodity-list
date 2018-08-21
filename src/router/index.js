@@ -12,37 +12,37 @@ export default new Router({
             path: '/plan',
             name: 'plan',
             component: () =>
-                import ( /* webpackChunkName: "plan" */ '@/pages/projectSchedule/template/plan/index'), // 
+                import ( /* webpackChunkName: "plan" */ '@/pages/projectSchedule/template/plan/index'), // 项目规划
         },
         {
             path: '/recent',
             name: 'recent',
             component: () =>
-                import ( /* webpackChunkName: "recent" */ '@/pages/projectSchedule/template/recent/recent'), // 
+                import ( /* webpackChunkName: "recent" */ '@/pages/projectSchedule/template/recent/recent'), // 近期
         },
         {
-            path: '/detail-delay',
+            path: '/detail-Delay',
             name: 'detail-delay',
             component: () =>
-                import ( /* webpackChunkName: "detail-delay" */ '@/pages/projectSchedule/template/detail/delay'), // 
+                import ( /* webpackChunkName: "detail-delay" */ '@/pages/projectSchedule/template/detail/delay'), // 延期详情
         },
         {
             path: '/detail-Countdown',
             name: 'detail-Countdown',
             component: () =>
-                import ( /* webpackChunkName: "detail-Countdown" */ '@/pages/projectSchedule/template/detail/Countdown'), // 
+                import ( /* webpackChunkName: "detail-Countdown" */ '@/pages/projectSchedule/template/detail/Countdown'), // 倒计时
         },
         {
             path: '/more',
             name: 'more',
             component: () =>
-                import ( /* webpackChunkName: "more" */ '@/pages/projectSchedule/template/more/index'), // 
+                import ( /* webpackChunkName: "more" */ '@/pages/projectSchedule/template/more/index'), //更多
         },
         {
             path: '/test',
             name: 'test',
             component: () =>
-                import ( /* webpackChunkName: "test" */ '@/pages/projectSchedule/index'), // 
+                import ( /* webpackChunkName: "test" */ '@/pages/projectSchedule/index'), // 主要
         },
       
       
