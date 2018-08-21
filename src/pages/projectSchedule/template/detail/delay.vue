@@ -50,6 +50,8 @@
             background-Color: #16151a; //box-sizing: border-box;
             h1 {
                 font-size: 30px;
+                letter-spacing: 2px;
+                font-weight: normal;
 
                 color: #fff;
             }
