@@ -10,88 +10,102 @@
 
 
         .login-text {
-            font-size: 40px;
+            font-size: 80px;
             letter-spacing: 2px; //border: 1px solid;
-            margin-top: 200px;
+            //margin-top: 400px;
+            margin-top: 449px;
+            //margin-top: 363px;
             text-align: center;
             color: #fff; //width: 100%;
         }
         .login-box {
-            position: relative; //width:380px;
-            height: 364px; //height:727px;
-            margin-top: 125px;
-            margin-left: 23px;
-            margin-right: 29px;
-            padding: 75px 55px 0 53px;
+            position: relative; 
+            height:727px;
+            margin-top:250px;
+            margin-left: 45px;
+            margin-right: 57px;
+            padding:150px 105px 0 105px;
             box-sizing: border-box;
             background-color: #000;
-            border-radius: 30px;
+            border-radius: 60px;
             .mima {
                 color: #999;
-                font-size: 23px;
+                font-size: 46px;
             }
 
             .login-box-text {
-                color: #999; //font-size: 23px;
-                letter-spacing: 1px;
-                font-size: 28px;
+                color: #999; 
+                letter-spacing: 2px;
+                font-size:46px;
 
             }
             .login-pwd {
-                border: solid;
-                margin-top: 65px;
-                border: none;
-                padding-top: 13px;
-                padding-bottom: 13px;
-                border-bottom: 0.5px solid #e2e2e2;
+                //background-color:#e2e2e2;
+                margin-top:112px;
+                padding: 26px 0;
+                box-sizing: border-box;
+                border-bottom: 0.5px solid #e2e2e2;/*no*/
+                
                 input {
                     border: none;
                     background-color: transparent;
                     color: #fff;
                     width: 93%;
-                    height: 32px; //line-height: 32px;
+                    height:66px;
+                    
                     outline:none;
                     font-size: 30px;
                     letter-spacing: 4px;
                 }
-                .login-rember {
-                    color: #fff;
-                    float: right; //background-color:antiquewhite;
-                    font-size: 24px; //line-height: 20px;
-                    margin-top: 30px;
-                    .ck {
-
-                        font-size: 28px;
-                        margin-right: 10px;
-                    }
+            }
+            .login-rember {
+                    
+                color: #fff;
+                float: right; 
+                margin-top: 50px;
+                height: 65px;
+                display:flex;      
+                .login-rember-pwd{
+                   height: 60px;
+                   font-size:48px;
+                   line-height: 60px;  
                 }
-                .show{
 
-                    position: absolute;
-                    font-size: 30px;
-                    z-index: 10;
-                    color: #999;
-                }
-                .showpwd{
-                    color: #f5a623;
-                    font-size: 30px;
-                    z-index: 10;
+                .ck {
+
+                    font-size:59px;
+                    margin-right: 30px;
+                    color: #3c2a0b;
+                    
                 }
             }
+            .show{
+
+                position: absolute;
+                font-size: 60px;
+                z-index: 10;
+                color: #999;
+            }
+            .showpwd{
+                color: #f5a623;
+                font-size: 60px;
+                z-index: 10;
+            }
+         
             .login-btn {
                 //background-color: #fff;
                 text-align: center;
-                margin-top: 90px;
+                margin-top:215px;
                 input {
-                    width: 236px;
-                    height: 85px;
+                    width:471px;
+                    height:169px;
                     background-color: #f5a623;
-                    border-radius: 42px;
+                    border-radius: 84px;
                     border: none;
-                    font-size: 30px;
+                    font-size: 60px;
                     color: #fff;
-                    letter-spacing: 1px;
-                   
+                    letter-spacing: 3px;
+                    outline: none;
 
                 }
             }
@@ -99,18 +113,18 @@
 
         }
         .login-tip {
-            width: 300px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 26px;
-            letter-spacing: 1px;
+            width: 600px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 48px;
+            letter-spacing: 2px;
             color: #fff;
             left: 0;
             right: 0;
             margin: 0 auto;
-            margin-top: 145px;
+            margin-top:346px;
             background-color: #000;
-            border-radius: 25px;
+            border-radius: 50px;
             text-align: center;
             //opacity: 0.7;
             text-align: center; // bottom: 130px;
@@ -126,7 +140,8 @@
         }
         .eye {
             color: #f5a623;
-            font-size: 30px;
+            font-size:59px;
+            margin-right: 30px;
         }
     }
 </style>
@@ -143,9 +158,11 @@
                 <div class="login-pwd">
                     <input  v-model="pwd" :type="pwdType" >
                     <i class="iconfont icon-yanjing show" :class="{'showpwd':spwd}"  @click="showpwd"></i>
-                    <div class="login-rember">
-                        <i class="ck" :class="{'iconfont icon-yuanquan':rempwd,'iconfont icon-xuanzhong1 eye':!rempwd}" @click="toggle"></i>
-                        记住密码</div>
+                   
+                </div>
+                <div class="login-rember">
+                    <i  :class="{'iconfont icon-yuanquan ck':rempwd,'iconfont icon-xuanzhong1 eye':!rempwd}" @click="toggle"></i>
+                    <span class="login-rember-pwd">记住密码</span>
                 </div>
                 <div class="login-btn">
                     <input type="button" value="登录" @click="showtip" />

@@ -4,37 +4,42 @@
         // height: 100%;
         // width: 100%;
         // position:absolute;
-        // background-color: #000;
+         background-color: #000;
         .recent-delay {
+            letter-spacing: 2px;
             .recent-delay-title {
                 color: #fff;
-                border-left: 10px solid #f5a623;
-                padding-left: 25px;
-                font-size: 30px;
+                border-left: 20px solid #f5a623;
+                padding-left: 52px;
+                font-size: 48px;
+                height: 60px;
+                line-height:60px;
             }
         }
         .recent-plan {
-            margin-top: 36px;
+            margin-top: 72px;
             .recent-plan-title {
                 color: #fff;
-                border-left: 10px solid #f5a623;
-                padding-left: 25px;
-                font-size: 30px;
+                border-left: 20px solid #f5a623;
+                padding-left: 52px;
+                font-size: 48px;
+                height: 60px;
+                line-height:60px;
             }
             li {
                 .plan-time-nubmer {
-                    font-Size: 30px;
+                    font-Size: 60px;
                     color: #19c8a9;
                 }
                 .plan-time-day {
-                    font-size: 25px;
+                    font-size: 50px;
                     font-weight: normal;
                 }
 
                 .plan-time-text {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top: 15px;
 
                 }
 
@@ -48,13 +53,12 @@
 
         ul {
             width: 100%;
-            margin-top: 30px;
-            letter-spacing: 1px;
+            //margin-top: 30px;
             li {
                 list-style-type: none;
-                padding-left: 15px;
-                padding-right: 20px;
-                font-size: 25px;
+                padding-left:29px;
+                padding-right:40px;
+                font-size: 50px;
                 display: flex;
                 align-items: center;
                 width: 100%;
@@ -62,30 +66,31 @@
                     float: left;
                 }
                 .uptime-date {
-                    font-size: 25px;
+                    font-size:50px;
                     color: #fff;
                     &::before {
                         content: "#";
-                        font-size: 15px;
+                        font-size:30px;
                     }
                 }
                 .uptime-text {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top: 16px;
 
                 }
                 .upcontent {
                     //background-color: #f5a623;
-                    border-bottom: 2px solid #946c05;
+                    border-bottom: 1px solid #946c05;/*no*/
                     float: left;
-                    margin-left: 26px;
+                    margin-left: 74px;
                     display: flex;
                     align-items: center;
-                    width: 73%;
-                    padding-bottom: 25px;
-                    padding-top: 25px;
+                    width: 67%;
+                    padding-bottom: 50px;
+                    padding-top: 50px;
                     box-sizing: border-box;
+                    
                 }
                 .upname {
                     float: left;
@@ -99,35 +104,37 @@
                 }
                 .upname-p1 {
                     color: #fff;
+                    letter-spacing: 3px;
 
                 }
                 .upname-p2 {
                     color: #bdbdbd;
-                    font-size: 22px;
-                    margin-top: 25px;
+                    font-size: 44px;
+                    margin-top: 47px;
 
                 }
 
                 .delay-time {
                     // float: right;
                     // margin-left: 26px;
-                    position: absolute;
+                    //position: absolute;
                     right: 44px;
                     text-align: center;
                 }
                 .plan-time-nubmer {
-                    font-Size: 30px;
+                    font-Size: 60 px;
                     color: #ff6767;
                 }
                 .plan-time-day {
-                    font-size: 25px;
+                    font-size: 50px;
                     font-weight: normal;
+                    margin-left: -15px;
                 }
 
                 .plan-time-text {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top:15px;
 
                 }
 
@@ -137,10 +144,10 @@
                     align-items: center; //height:79px;
                     //margin-left: 8px;
                     position: absolute;
-                    right: 20px;
+                    right: 40px;
                     i {
                         color: #916b05;
-                        font-size: 20px;
+                        font-size: 40px;
                     }
                 }
             }

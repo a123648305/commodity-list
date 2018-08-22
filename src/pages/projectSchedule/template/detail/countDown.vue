@@ -1,7 +1,7 @@
 <style lang="less" scoped>
     // 详情-倒计时
     .projectSchedule-detail-countDown {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         background-color: #000;
         height: 100%;
         position: absolute;
@@ -9,166 +9,174 @@
             width: 100%;
             text-align: center;
             color: #fff;
-            font-size: 30px;
-            padding-left: 25px;
+            font-size: 60px;
+            padding-left:50px;
             box-sizing: border-box;
-            margin-top: 44px;
+            padding-top:50px;
+            padding-bottom:50px;
+            letter-spacing: 3px;
             i {
                 transform: rotate(180deg);
                 float: left;
-                font-size: 26px;
+                font-size:51px;
                 color: #fff;
 
             }
             span {
-                margin-left: -25px;
+                margin-left: -50px;
             }
 
         }
         .startime {
-            height: 50px;
-            line-height: 50px;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-Size: 22px;
+            margin-top: 40px;
+            height: 100px;
+            line-height: 100px;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-Size: 44px;
             color: #ffbb00;
-            border-Radius: 10px;
+            border-Radius: 20px;
             background-Color: #16151a;
-            padding-left: 34px;
-            margin-top: 45px;
-
-
+            padding-left: 68px;
         }
         .detail-content {
-            margin-top: 25px;
-            height: 212px;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding-left: 20px;
-            padding-top: 26px;
-            border-Radius: 10px;
-            background-Color: #16151a; //box-sizing: border-box;
+            margin-top: 50px;
+            //height: 424px;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-left: 39px;
+            padding-right: 65px;
+            padding-top: 51px;
+            border-Radius: 20px;
+            background-Color: #16151a; 
+            padding-bottom: 53px;
             h1 {
-                font-size: 30px;
-                letter-spacing: 2px;
+                font-size: 60px;
+                letter-spacing: 3px;
                 font-weight: normal;
-
-
                 color: #fff;
             }
             p {
-                font-size: 22px;
+                font-size: 44px;
                 color: #bdbdbd;
                 line-height: 1.3;
+                margin-top: 60px;
             }
         }
         .detail-uptime {
-            margin-top: 44px;
+            margin-top: 80px;
             .detail-uptime-title {
                 //width: 100%;
-                border-left: 10px solid #f5a623;
-                padding-left: 15px;
-                font-size: 24px;
-                letter-spacing: 1px;
+                border-left: 20px solid #f5a623;
+                padding-left: 30px;
+                font-size: 48px;
+                letter-spacing: 4px;
                 color: #fff;
+                height: 60px;
+                line-height: 60px;
             }
             .detail-uptime-content {
-                border-Radius: 10px;
+                border-Radius: 20px;
                 background-Color: #16151a;
-                height: 95px;
-                margin-left: 20px;
-                margin-right: 20px; //line-height: 63px;
-                padding-left: 25px;
+                height: 190px;
+                margin-left: 40px;
+                margin-right: 40px; //line-height: 63px;
+                padding-left: 55px;
                 color: #fff;
-                margin-top: 24px;
+                margin-top: 40px;
                 display: flex;
                 align-items: center;
-                font-size: 25px;
-                .day-time-date {
+                font-size: 50px; 
+                .daytime-date {
                     float: left;
+                    letter-spacing: 3px;
                     &::before {
                         content: "#";
-                        font-size: 15px;
+                        font-size: 30px;
 
                     }
                 }
                 .daytime {
-                    right: 47px;
+                    right: 133px;
                     position: absolute;
                     text-align: center;
-                    border-bottom: 2px solid #946c05;
-                    padding-bottom: 10px;
-                    width: 62px;
+                    border-bottom: 4px solid #946c05;
+                    padding-bottom: 20px;
+                    //width:130px;
                 }
                 .daytime-number {
                     color: #19c8a9;
-                    font-size: 30px;
+                    font-size: 60px;
                 }
                 .daytime-day {
-                    font-size: 25px;
+                    font-size: 50px;
                     font-weight: normal;
+                    margin-left:-15px;
                 }
                 .daytime-text {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top: 15px;
+                    
                 }
 
             }
         }
 
         .detail-usetime {
-            margin-top: 44px;
+            margin-top: 80px;
             .detail-usetime-title {
                 //width: 100%;
-                border-left: 10px solid #f5a623;
-                padding-left: 10px;
-                font-size: 24px;
-                letter-spacing: 1px;
+                border-left: 20px solid #f5a623;
+                padding-left: 30px;
+                font-size: 48px;
+                letter-spacing:4px;
                 color: #fff;
+                height: 60px;
+                line-height: 60px;
             }
             .detail-usetime-content {
-                border-Radius: 10px;
+                border-Radius: 20px;
                 background-Color: #16151a;
-                height: 95px;
-                margin-left: 20px;
-                margin-right: 20px; //line-height: 63px;
-                padding-left: 25px;
+                height: 190px;
+                margin-left: 40px;
+                margin-right: 40px; //line-height: 63px;
+                padding-left: 55px;
                 color: #fff;
-                margin-top: 24px;
+                margin-top: 47px;
                 display: flex;
                 align-items: center;
-                font-size: 25px;
-                .day-time-date {
+                font-size: 50px;
+                .daytime-date {
                     float: left;
+                    letter-spacing: 3px;
                     &::before {
                         content: "#";
-                        font-size: 15px;
+                        font-size: 30px;
 
                     }
                 }
                 .daytime {
-                    right: 47px;
+                    right: 133px;
                     position: absolute;
                     text-align: center;
-                    border-bottom: 2px solid #946c05;
-                    padding-bottom: 10px;
-                    width: 62px;
+                    border-bottom: 4px solid #946c05;
+                    padding-bottom: 20px;
                     color: #ff6767;
                 }
                 .daytime-number {
                     color: #19c8a9;
-                    ;
-                    font-size: 30px;
+                    font-size: 60px;
                 }
                 .daytime-day {
-                    font-size: 25px;
+                    font-size: 50px;
                     font-weight: normal;
+                    margin-left:-15px;
                 }
                 .daytime-text {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top: 16px;
                 }
 
             }
@@ -182,9 +190,12 @@
         <!-- 详情-倒计时 -->
         <div class="projectSchedule-detail-countDown">
             <div class="detail-title">
-                <router-link to="/test">
+                <!-- <router-link to="/test">
                     <i class="iconfont icon-you"></i>
-                </router-link>
+                </router-link> -->
+                
+                    <i class="iconfont icon-you" @click="black"></i>
+               
                 <span>详情</span>
             </div>
             <div class="startime">项目开始时间:2018-04-25</div>
@@ -198,7 +209,7 @@
                 <div class="detail-uptime-content">
                     <span class="daytime-date">2018年08月01日</span>
                     <span class="daytime">
-                        <p class="daytime-number">8
+                        <p class="daytime-number">28
                             <b class="daytime-day">天</b>
                         </p>
                         <p class="daytime-text">倒计时</p>
@@ -213,7 +224,7 @@
                 <div class="detail-usetime-content">
                     <span class="daytime-date">2018年08月01日</span>
                     <span class="daytime">
-                        <p class="daytime-number">1
+                        <p class="daytime-number">35
                             <b class="daytime-day">天</b>
                         </p>
                         <p class="daytime-text">倒计时</p>
@@ -243,6 +254,11 @@
 
         },
         methods: {
+        black() {
+            
+            this.$router.go(-1)
+        }
+
 
         },
     }

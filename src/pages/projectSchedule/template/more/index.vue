@@ -1,16 +1,16 @@
 <style lang="less" scoped>
     // 更多
     .projectSchedule-more-index {
-        padding: 0 20px;
-        letter-spacing: 1px;
+        padding: 0 40px;
+        letter-spacing: 3px;
         li {
             list-style-type: none;
-            height: 127px;
-            padding-left: 26px;
-            padding-right: 20px;
-            border-Radius: 10px;
+            height:254px;
+            padding-left: 51px;
+            padding-right: 40px;
+            border-Radius: 20px;
             background-Color: #16151a;
-            margin-top: 25px;
+            margin-top: 50px;
             display: flex;
             align-items: center;
             box-sizing: border-box;
@@ -19,10 +19,9 @@
             }
 
             .iconfont {
-
                 color: #916b05;
                 &:first-child {
-                    font-size: 60px;
+                    font-size: 120px;
                     float: left;
                     color: #f59d41;
                     background-image: -webkit-gradient( linear, 0 0, 0 bottom, from(rgb(231, 96, 77)), to(rgb(255, 202, 57)));
@@ -31,33 +30,34 @@
                 }
                 &:last-child {
 
-                    font-size: 20px;
-                    right: 40px;
+                    font-size: 40px;
+                    right: 80px;
                     position: absolute;
                 }
 
             }
             .more-content {
                 float: left;
-                margin-left: 32px;
-                width: 82%;
+                margin-left:45px;
+                width: 80%;
 
 
                 p {
-                    font-size: 25px;
+                    font-size: 50px;
                     color: #fff;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     &:last-child {
                         color: #bdbdbd;
-                        font-size: 22px;
-                        margin-top: 15px;
+                        font-size: 44px;
+                        margin-top:45px;
+                        letter-spacing: 2px;
                     }
                 }
-                more-number {
+                .more-number {
                     color: #19c8a9;
-                    font-size: 28px;
+                    font-size: 56px;
                     margin-right: 15px;
                     font-weight: normal;
 

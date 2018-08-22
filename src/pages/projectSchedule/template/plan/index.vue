@@ -5,56 +5,65 @@
         height: 100%;
         width: 100%;
         position: absolute;
+        letter-spacing: 2px;
+        overflow: hidden;
         .plan-title {
+            position: relative;
             width: 100%;
             text-align: center;
             color: #fff;
-            font-size: 30px;
-            padding-left: 25px;
-            box-sizing: border-box;
-            margin-top: 53px;
+            font-size: 60px;
+            //box-sizing: border-box;
+            padding: 50px 0px;
+            letter-spacing: 3px;
+            //height: 120px;
             i {
                 transform: rotate(180deg);
                 float: left;
-                font-size: 25px;
+                font-size: 50px;
+                margin-left: 50px;
 
             }
             span {
-                margin-left: -25px;
+                margin-left: -50px;
             }
 
         }
-        ul {
-            //overflow-y: scroll;
-            width: 100%;
-            margin-top: 30px;
-            letter-spacing: 1px;
+        .plan-list {
+            //background-color: #000;
+            height: 100%;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                display:none
+            } 
             li {
+                //background-color:greenyellow;
                 list-style-type: none;
                 padding-left: 15px;
                 padding-right: 20px;
-                font-size: 25px; //margin-top: 25px;
+                font-size: 25px; 
                 //border: 1px solid red;
                 //height: 128px;
                 display: flex;
                 align-items: center;
                 width: 100%;
-
                 .uptime {
                     float: left;
-                    font-size: 25px;
+                    
                 }
                 .uptime-date {
                     color: #fff;
+                    letter-spacing: 3px;
+                    font-size: 50px;
                     &::before {
                         content: "#";
-                        font-size: 15px;
+                        font-size: 30px;
                     }
                 }
                 .uptime-content {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top: 16px;
 
                 }
 
@@ -63,18 +72,18 @@
                     border-bottom: 1px solid #946c05; //padding: 17px 0; 
                     //height:118px;
                     float: left;
-                    margin-left: 26px;
+                    margin-left: 74px;
                     display: flex;
                     align-items: center;
-                    width: 73%;
-                    padding-top: 25px;
-                    padding-bottom: 25px;
+                    width: 67%;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
                     box-sizing: border-box;
                 }
 
                 .upname {
                     float: left;
-                    width: 90%;
+                    width: 80%;
                 }
                 .upname-p1,
                 .upname-p2 {
@@ -84,58 +93,58 @@
                 }
                 .upname-p1 {
                     color: #fff;
+                    font-size: 50px;
 
                 }
                 .upname-p2 {
                     color: #bdbdbd;
-                    font-size: 22px;
-                    margin-top: 25px;
+                    font-size: 44px;
+                    margin-top: 48px;
 
                 }
 
 
 
                 .delay-time {
-                    position: absolute;
-                    right: 44px;
+                   
+                    right: 87px;
                     text-align: center;
                 }
 
                 .delay-time-number {
-                    font-Size: 30px;
+                    font-Size: 60px;
                     color: #19c8a9;
                 }
                 .delay-time-day {
-                    font-size: 25px;
+                    font-size: 55px;
                     font-weight: normal;
+                    margin-left: -15px;
                 }
                 .delay-time-text {
                     color: #bdbdbd;
-                    font-size: 15px;
-                    margin-top: 8px;
+                    font-size: 30px;
+                    margin-top: 15px;    
 
                 }
 
                 .plan-right {
-                    position: absolute;
-                    right: 20px;
+                   
+                    right: 40px;
                     display: flex;
                     align-items: center;
                 }
                 .iconfont {
                     color: #916b05;
-                    font-size: 20px;
+                    font-size: 40px;
                 }
 
             }
         }
 
-        .plan-list {
-            background-color: #000;
-        }
+       
 
-
-    }
+}
+    
 </style>
 
 <template>
