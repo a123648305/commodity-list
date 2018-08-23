@@ -73,7 +73,8 @@
                 .login-rember-pwd{
                    height: 60px;
                    font-size:48px;
-                   line-height: 60px;  
+                   line-height: 60px;
+                   letter-spacing: 2px;  
                 }
 
                 .ck {
