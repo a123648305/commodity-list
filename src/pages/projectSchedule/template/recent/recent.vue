@@ -89,7 +89,10 @@
                     padding-top: 50px;
                     display:table;
                     vertical-align: middle;
-                    font-size: 50px;                  
+                    font-size: 50px;
+                    @media screen and(max-width: 320px) {
+                        width: 62%;
+                    }                  
                     
                 }
                 .upname {

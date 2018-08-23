@@ -73,6 +73,9 @@
                     width: 66%;
                     padding-top: 50px;
                     padding-bottom: 50px;
+                    @media screen and(max-width: 320px) {
+                        width: 62%;
+                    }  
                 }
 
                 .upname {

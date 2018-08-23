@@ -8,7 +8,7 @@
         background-size: 100% 100%;
         background-color: rgba(0, 0, 0, 0.5);
 
-
+         
         .login-text {
             font-size: 80px;
             letter-spacing: 2px; //border: 1px solid;
@@ -17,6 +17,9 @@
             //margin-top: 363px;
             text-align: center;
             color: #fff; //width: 100%;
+            @media screen and(max-width: 320px) {
+                margin-top: 160px;
+            }
         }
         .login-box {
             position: relative; 
