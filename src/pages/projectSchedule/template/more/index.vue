@@ -32,7 +32,7 @@
 
                     font-size: 40px;
                     right: 80px;
-                    position: absolute;
+                    //position: absolute;
                 }
 
             }
@@ -111,7 +111,7 @@
                     </div>
                     <i class="iconfont icon-you"></i>
                 </li>
-                <li>
+                <li v-for="item in 10" :key="item">
                     <i class="iconfont icon-shangcheng"></i>
                     <div class="more-content">
                         <p>商城</p>

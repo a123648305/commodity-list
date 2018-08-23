@@ -1,9 +1,6 @@
 <style lang="less" scoped>
     // 近期
     .projectSchedule-recent-index {
-        // height: 100%;
-        // width: 100%;
-        // position:absolute;
          background-color: #000;
         .recent-delay {
             letter-spacing: 2px;
@@ -14,6 +11,7 @@
                 font-size: 48px;
                 height: 60px;
                 line-height:60px;
+                
             }
         }
         .recent-plan {
@@ -64,10 +62,12 @@
                 width: 100%;
                 .uptime {
                     float: left;
+                    text-align: center;
                 }
                 .uptime-date {
                     font-size:50px;
                     color: #fff;
+                    letter-spacing: 3px;
                     &::before {
                         content: "#";
                         font-size:30px;
@@ -77,7 +77,8 @@
                     color: #bdbdbd;
                     font-size: 30px;
                     margin-top: 16px;
-
+                    letter-spacing: 2px;
+                   
                 }
                 .upcontent {
                     //background-color: #f5a623;
@@ -94,7 +95,7 @@
                 }
                 .upname {
                     float: left;
-                    width: 92%;
+                    width: 80%;
                 }
                 .upname-p1,
                 .upname-p2 {
@@ -109,7 +110,7 @@
                 }
                 .upname-p2 {
                     color: #bdbdbd;
-                    font-size: 44px;
+                    font-size: 10px;
                     margin-top: 47px;
 
                 }
@@ -143,7 +144,7 @@
                     display: flex;
                     align-items: center; //height:79px;
                     //margin-left: 8px;
-                    position: absolute;
+                    //position: absolute;
                     right: 40px;
                     i {
                         color: #916b05;
@@ -180,7 +181,7 @@
                                 <p class="plan-time-nubmer">4
                                     <b class="plan-time-day">天</b>
                                 </p>
-                                <p class="plan-time-text">倒计时</p>
+                                <p class="plan-time-text">延误</p>
 
                             </div>
 
@@ -208,7 +209,7 @@
                                 <p class="plan-time-nubmer">4
                                     <b class="plan-time-day">天</b>
                                 </p>
-                                <p class="plan-time-text">倒计时</p>
+                                <p class="plan-time-text">延误</p>
 
                             </div>
 
@@ -237,7 +238,7 @@
                     <li v-for="item in 10" :key="item">
                         <div class="uptime">
                             <p class="uptime-date">8月10日</p>
-                            <p class="uptime-text">原定测试上线</p>
+                            <p class="uptime-text">测试上线时间</p>
                         </div>
                         <div class="upcontent">
                             <div class="upname">

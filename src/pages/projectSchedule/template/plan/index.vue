@@ -94,6 +94,7 @@
                 .upname-p1 {
                     color: #fff;
                     font-size: 50px;
+                    letter-spacing: 3px;
 
                 }
                 .upname-p2 {

@@ -3,6 +3,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
+        overflow: hidden;
         background-color: #000;
         .title {
             //margin-top: 52px;
@@ -13,31 +14,38 @@
             background: -o-linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19));
             background: -moz-linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19));
             background: linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19)); //background-color: rgb(16,16,19);
-            opacity: 0.9;
-            height: 81px;
-            padding: 0 191px;
+            //opacity: 0.9;
+            height:127px;
             padding-top: 35px;
+            
             span {
 
-                letter-spacing: 1px; //display:inline-block;
-                font-size: 30px;
-
-                bottom: 0px;
+                letter-spacing: 3px; 
+                font-size: 60px;
+               
+                //bottom: 0px;
                 &:last-child {
-                    margin-left: 124px;
+                    margin-left: 247px;
                 }
 
             }
         }
         .active {
             color: #f5a623;
-            border-bottom: 4px solid #f5a623;
-            padding-bottom: 7px;
+            border-bottom: 8px solid #f5a623;
+            padding-bottom: 12px;
 
         }
         .contentshow {
-            margin-top: 51px; //overflow-y:auto;
-            background-color: #000;
+            margin-top:102px; //overflow-y:auto;
+            
+            //background-color: aquamarine;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            &::-webkit-scrollbar {
+                display:none
+            }
 
         }
     }
