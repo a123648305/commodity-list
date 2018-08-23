@@ -78,6 +78,7 @@
                     font-size: 30px;
                     margin-top: 16px;
                     letter-spacing: 2px;
+                    margin-left: 11px;
                    
                 }
                 .upcontent {
