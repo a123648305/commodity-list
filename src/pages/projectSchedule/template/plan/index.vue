@@ -33,24 +33,19 @@
             //background-color: #000;
             height: 100%;
             overflow-y: auto;
+            overflow-x: hidden;
             &::-webkit-scrollbar {
                 display:none
             } 
             li {
                 //background-color:greenyellow;
                 list-style-type: none;
-                padding-left: 15px;
-                padding-right: 20px;
-                font-size: 25px; 
-                //border: 1px solid red;
-                //height: 128px;
+                padding-left:30px;
+                padding-right:40px;
+                font-size: 50px; 
                 display: flex;
                 align-items: center;
                 width: 100%;
-                .uptime {
-                    float: left;
-                    
-                }
                 .uptime-date {
                     color: #fff;
                     letter-spacing: 3px;
@@ -64,6 +59,7 @@
                     color: #bdbdbd;
                     font-size: 30px;
                     margin-top: 16px;
+                    
 
                 }
 
@@ -73,12 +69,10 @@
                     //height:118px;
                     float: left;
                     margin-left: 74px;
-                    display: flex;
-                    align-items: center;
-                    width: 67%;
+    
+                    width: 66%;
                     padding-top: 50px;
                     padding-bottom: 50px;
-                    box-sizing: border-box;
                 }
 
                 .upname {
@@ -100,39 +94,44 @@
                 .upname-p2 {
                     color: #bdbdbd;
                     font-size: 44px;
-                    margin-top: 48px;
+                    margin-top: 47px;
 
                 }
 
 
 
                 .delay-time {
-                   
-                    right: 87px;
+                    float: right;
                     text-align: center;
+                    margin-right: -15px;
+                    letter-spacing: 3px;
+                    padding-top: 17px;
                 }
 
                 .delay-time-number {
-                    font-Size: 60px;
+                    font-Size:60px;
                     color: #19c8a9;
                 }
                 .delay-time-day {
-                    font-size: 55px;
+                    font-size: 50px;
                     font-weight: normal;
                     margin-left: -15px;
                 }
                 .delay-time-text {
                     color: #bdbdbd;
                     font-size: 30px;
-                    margin-top: 15px;    
+                    margin-top: 15px;
+                    //transform: scale(0.9);
+           
 
                 }
 
                 .plan-right {
                    
-                    right: 40px;
-                    display: flex;
-                    align-items: center;
+                    margin-left: 23px;
+                    // display: flex;
+                    // align-items: center;
+                    padding-top: 30px;
                 }
                 .iconfont {
                     color: #916b05;
@@ -153,7 +152,7 @@
         <!-- 项目计划 -->
         <div class="projectSchedule-plan-index">
             <div class="plan-title">
-                <i class="iconfont icon-you"></i>
+                <i class="iconfont icon-you" @click="black"></i>
                 <span>小红十项目研发规划</span>
             </div>
             <div class="plan-list">
@@ -309,6 +308,10 @@
 
         },
         methods: {
+                black() {
+            
+            this.$router.go(-1)
+        }
 
         },
     }

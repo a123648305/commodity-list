@@ -56,6 +56,7 @@
                     outline:none;
                     font-size: 30px;
                     letter-spacing: 4px;
+                    caret-color: #f5a623;
                 }
             }
             .login-rember {
@@ -106,6 +107,8 @@
                     color: #fff;
                     letter-spacing: 3px;
                     outline: none;
+                    
+                 
 
                 }
             }

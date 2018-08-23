@@ -82,7 +82,7 @@
                         <p>
                             <b class="more-number">9</b>项规划正在进行中</p>
                     </div>
-                    <i class="iconfont icon-you"></i>
+                    <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
                 <li>
                     <i class="iconfont icon-xiaohongshi1"></i>
@@ -91,7 +91,7 @@
                         <p>
                             <b class="more-number">4</b>项规划正在进行中</p>
                     </div>
-                    <i class="iconfont icon-you"></i>
+                    <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
                 <li>
                     <i class="iconfont icon-jiaoyu"></i>
@@ -100,7 +100,7 @@
                         <p>
                             <b class="more-number">9</b>项规划正在进行中</p>
                     </div>
-                    <i class="iconfont icon-you"></i>
+                    <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
                 <li>
                     <i class="iconfont icon-mohe"></i>
@@ -118,7 +118,7 @@
                         <p>
                             <b class="more-number">9</b>项规划正在进行中</p>
                     </div>
-                    <i class="iconfont icon-you"></i>
+                    <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
             </ul>
         </div>

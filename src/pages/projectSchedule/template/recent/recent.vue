@@ -32,6 +32,7 @@
                 .plan-time-day {
                     font-size: 50px;
                     font-weight: normal;
+                    margin-left: -15px;
                 }
 
                 .plan-time-text {
@@ -51,17 +52,16 @@
 
         ul {
             width: 100%;
-            //margin-top: 30px;
             li {
                 list-style-type: none;
-                padding-left:29px;
+                padding-left:30px;
                 padding-right:40px;
-                font-size: 50px;
+                //font-size: 50px;
                 display: flex;
                 align-items: center;
                 width: 100%;
+                
                 .uptime {
-                    float: left;
                     text-align: center;
                 }
                 .uptime-date {
@@ -81,21 +81,23 @@
                    
                 }
                 .upcontent {
-                    //background-color: #f5a623;
+                    //background-color:#916b05;
                     border-bottom: 1px solid #946c05;/*no*/
-                    float: left;
                     margin-left: 74px;
-                    display: flex;
-                    align-items: center;
-                    width: 67%;
+                    width: 66%;
                     padding-bottom: 50px;
                     padding-top: 50px;
-                    box-sizing: border-box;
+                    display:table;
+                    vertical-align: middle;
+                    font-size: 50px;                  
                     
                 }
                 .upname {
                     float: left;
+                    display:table-cell;
+                    vertical-align: middle; 
                     width: 80%;
+                    
                 }
                 .upname-p1,
                 .upname-p2 {
@@ -110,20 +112,20 @@
                 }
                 .upname-p2 {
                     color: #bdbdbd;
-                    font-size: 10px;
+                    font-size: 44px;
                     margin-top: 47px;
 
                 }
 
                 .delay-time {
-                    // float: right;
-                    // margin-left: 26px;
-                    //position: absolute;
-                    right: 44px;
+                    float: right;
+                    margin-right: -15px;
                     text-align: center;
+                    letter-spacing: 3px;
+                     padding-top: 17px;
                 }
                 .plan-time-nubmer {
-                    font-Size: 60 px;
+                    font-Size: 60px;
                     color: #ff6767;
                 }
                 .plan-time-day {
@@ -140,12 +142,14 @@
                 }
 
                 .recent-right {
-                    float: right;
-                    display: flex;
-                    align-items: center; //height:79px;
+                    margin-left: 23px;
+                    
+                    //height:79px;
                     //margin-left: 8px;
                     //position: absolute;
                     right: 40px;
+                    padding-top: 30px;
+                    
                     i {
                         color: #916b05;
                         font-size: 40px;
@@ -216,7 +220,7 @@
                         </div>
                         <div class="recent-right">
 
-                            <router-link to="/detail-Delay">
+                            <router-link to="/">
                                 <i class="iconfont icon-you "></i>
                             </router-link>
 

@@ -6,14 +6,14 @@
         overflow: hidden;
         background-color: #000;
         .title {
-            //margin-top: 52px;
-            text-align: center;
             box-sizing: border-box;
             color: #fff;
-            background: -webkit-linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19));
-            background: -o-linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19));
-            background: -moz-linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19));
-            background: linear-gradient(rgb(44, 45, 49), rgb(16, 16, 19)); //background-color: rgb(16,16,19);
+
+            background: -webkit-linear-gradient(#1b1c1f, #28282d);
+            background: -o-linear-gradient(#1b1c1f, #28282d);
+            background: -moz-linear-gradient(#1b1c1f, #28282d);
+            background: -mos-linear-gradient(#1b1c1f, #28282d);
+            background: linear-gradient(#1b1c1f, #28282d);
             //opacity: 0.9;
             height:127px;
             padding-top: 35px;
@@ -22,8 +22,8 @@
 
                 letter-spacing: 3px; 
                 font-size: 60px;
+                margin-left:381px; 
                
-                //bottom: 0px;
                 &:last-child {
                     margin-left: 247px;
                 }
