@@ -204,7 +204,7 @@
         },
         methods: {
             showtip() {
-                this.tip = true;
+                this.tip = !this.tip;
                 
                 console.log(this.pwdType);
             },
