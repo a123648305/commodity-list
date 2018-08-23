@@ -190,9 +190,7 @@
         <!-- 详情-倒计时 -->
         <div class="projectSchedule-detail-countDown">
             <div class="detail-title">
-                <!-- <router-link to="/test">
-                    <i class="iconfont icon-you"></i>
-                </router-link> -->
+                
                 
                     <i class="iconfont icon-you" @click="black"></i>
                

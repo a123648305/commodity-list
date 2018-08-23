@@ -145,7 +145,7 @@
                 }
 
                 .recent-right {
-                    margin-left: 23px;
+                    margin-left:23px;
                     
                     //height:79px;
                     //margin-left: 8px;

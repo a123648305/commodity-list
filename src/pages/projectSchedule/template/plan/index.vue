@@ -65,7 +65,7 @@
 
                 .upcontent {
                     //background-color: #f5a623;
-                    border-bottom: 1px solid #946c05; //padding: 17px 0; 
+                    border-bottom: 1px solid #946c05; /*no*/
                     //height:118px;
                     float: left;
                     margin-left: 74px;

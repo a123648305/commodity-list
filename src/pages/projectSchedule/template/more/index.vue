@@ -17,21 +17,22 @@
             &:first-child {
                 margin-top: 0;
             }
-
-            .iconfont {
-                color: #916b05;
-                &:first-child {
-                    font-size: 120px;
+            .left-logo{
+                font-size: 120px;
                     float: left;
-                    color: #f59d41;
                     background-image: -webkit-gradient( linear, 0 0, 0 bottom, from(rgb(231, 96, 77)), to(rgb(255, 202, 57)));
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                }
+
+            }
+            .iconfont {
+                
                 &:last-child {
 
                     font-size: 40px;
                     right: 80px;
+                    color: #916b05;
+                    
                     //position: absolute;
                 }
 
@@ -58,7 +59,7 @@
                 .more-number {
                     color: #19c8a9;
                     font-size: 56px;
-                    margin-right: 15px;
+                    margin-right: 20px;
                     font-weight: normal;
 
 
@@ -76,7 +77,7 @@
         <div class="projectSchedule-more-index">
             <ul>
                 <li>
-                    <i class="iconfont icon-duofenxingqiu"></i>
+                    <i class="iconfont icon-duofenxingqiu left-logo"></i>
                     <div class="more-content">
                         <p>多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球多粉星球</p>
                         <p>
@@ -85,7 +86,7 @@
                     <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
                 <li>
-                    <i class="iconfont icon-xiaohongshi1"></i>
+                    <i class="iconfont icon-xiaohongshi1 left-logo"></i>
                     <div class="more-content">
                         <p>小红十</p>
                         <p>
@@ -94,7 +95,7 @@
                     <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
                 <li>
-                    <i class="iconfont icon-jiaoyu"></i>
+                    <i class="iconfont icon-jiaoyu left-logo"></i>
                     <div class="more-content">
                         <p>教育</p>
                         <p>
@@ -103,16 +104,16 @@
                     <router-link to="/plan"><i class="iconfont icon-you"></i></router-link>
                 </li>
                 <li>
-                    <i class="iconfont icon-mohe"></i>
+                    <i class="iconfont icon-mohe left-logo"></i>
                     <div class="more-content">
                         <p>魔盒</p>
                         <p>
-                            <b class="more-number">9</b>项规划正在进行中</p>
+                            <b class="more-number">2</b>项规划正在进行中</p>
                     </div>
                     <i class="iconfont icon-you"></i>
                 </li>
                 <li v-for="item in 10" :key="item">
-                    <i class="iconfont icon-shangcheng"></i>
+                    <i class="iconfont icon-shangcheng left-logo"></i>
                     <div class="more-content">
                         <p>商城</p>
                         <p>

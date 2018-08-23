@@ -23,7 +23,8 @@
         }
         .login-box {
             position: relative; 
-            height:727px;
+            //height:727px;
+            height: 727px;
             margin-top:250px;
             margin-left: 45px;
             margin-right: 57px;
@@ -47,7 +48,7 @@
                 margin-top:112px;
                 padding: 26px 0;
                 box-sizing: border-box;
-                border-bottom: 0.5px solid #e2e2e2;/*no*/
+                border-bottom: 1px solid #e2e2e2;/*no*/
                 
                 input {
                     border: none;
@@ -99,7 +100,7 @@
             .login-btn {
                 //background-color: #fff;
                 text-align: center;
-                margin-top:215px;
+                margin-top:207px;
                 input {
                     width:471px;
                     height:169px;
@@ -110,6 +111,7 @@
                     color: #fff;
                     letter-spacing: 3px;
                     outline: none;
+                    //background-color: transparent;
                     
                  
 
