@@ -70,11 +70,11 @@
                     float: left;
                     margin-left: 74px;
     
-                    width: 66%;
+                    width: 65%;
                     padding-top: 50px;
                     padding-bottom: 50px;
                     @media screen and(max-width: 320px) {
-                        width: 62%;
+                        width: 60%;
                     }  
                 }
 

@@ -85,14 +85,14 @@
                     //background-color:#916b05;
                     border-bottom: 1px solid #946c05;/*no*/
                     margin-left: 74px;
-                    width: 66%;
+                    width: 65%;
                     padding-bottom: 50px;
                     padding-top: 50px;
                     display:table;
                     vertical-align: middle;
                     font-size: 50px;
                     @media screen and(max-width: 320px) {
-                        width: 62%;
+                        width: 60%;
                     }                  
                     
                 }
