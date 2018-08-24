@@ -27,7 +27,7 @@
         }
         .iconfont {
             
-            &:last-child {
+            &:last-child {  
 
                 font-size: 40px;
                 color: #916b05;
@@ -40,6 +40,7 @@
             float: left;
             margin-left:51px;
             width: 80%;
+           
 
 
             p {
@@ -52,7 +53,7 @@
             .more-content-2{
                 color: #bdbdbd;
                 font-size: 44px;
-                margin-top:45px;
+                margin-top:18px;
                 letter-spacing: 2px;
             }
             
