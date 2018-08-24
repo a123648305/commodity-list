@@ -81,7 +81,7 @@
             height: 190px;
             margin-left: 40px;
             margin-right: 40px; //line-height: 63px;
-            padding-left: 55px;
+            padding-left: 40px;
             color: #fff;
             margin-top: 40px;
             display: flex;
@@ -143,8 +143,8 @@
             background-Color: #16151a;
             height: 190px;
             margin-left: 40px;
-            margin-right: 40px; //line-height: 63px;
-            padding-left: 55px;
+            margin-right: 40px;
+            padding-left: 40px;
             color: #fff;
             margin-top: 47px;
             display: flex;
