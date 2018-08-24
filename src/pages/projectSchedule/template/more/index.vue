@@ -30,7 +30,6 @@
             &:last-child {
 
                 font-size: 40px;
-                right: 80px;
                 color: #916b05;
                 
                 //position: absolute;
@@ -39,7 +38,7 @@
         }
         .more-content {
             float: left;
-            margin-left:45px;
+            margin-left:51px;
             width: 80%;
 
 
