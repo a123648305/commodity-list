@@ -51,7 +51,8 @@
                 color: #bdbdbd;
                 font-size: 30px;
                 margin-top: 16px;
-                
+                text-align: center;
+                transform: scale(0.9);
 
             }
             .upname {
@@ -100,7 +101,7 @@
                 color: #bdbdbd;
                 font-size: 30px;
                 margin-top: 15px;
-                //transform: scale(0.9);
+                
 
 
             }

@@ -17,6 +17,7 @@
         //opacity: 0.9;
         height:127px;
         padding-top: 35px;
+        padding-top: 44px;
         
         span {
 
