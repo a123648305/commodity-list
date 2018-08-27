@@ -141,9 +141,9 @@
                                 <b>￥</b>168</p>
                             <p>￥200</p>
                             <div class="list-right-number">
-                                <span class="sub iconfont icon-jianshuliang" @click="sub"></span>
-                                <span class="list-right-count">{{count}}</span>
-                                <span class="add iconfont icon-jia" @click="add"></span>
+                                <span class="sub iconfont icon-jianshuliang" @click="sub($event)"></span>
+                                <span >{{count}}</span>
+                                <span class="add iconfont icon-jia" @click="add($event)"></span>
                             </div>
                         </div>
                     </li>
@@ -157,7 +157,7 @@
                                 <b>￥</b>168</p>
                             <p>￥200</p>
                             <div class="list-right-number">
-                                <span class="sub iconfont icon-jianshuliang" @click="sub"></span>
+                                <span class="sub iconfont icon-jianshuliang" @click="sub($event)"></span>
                                 <span>1</span>
                                 <span class="add iconfont icon-jia"></span>
                             </div>
@@ -222,9 +222,12 @@
 
         },
         methods: {
-            add() {
+            add(e) {
                 this.count++;
                 //console.log(this.count);
+                 // e.target 是你当前点击的元素
+       // e.currentTarget 是你绑定事件的元素
+                console.log(e.currentTarget)
             },
             sub() {
                 if (this.count != 0)
