@@ -32,12 +32,12 @@ export default new Router({
             component: () =>
                 import ( /* webpackChunkName: "detail-Countdown" */ '@/pages/projectSchedule/template/detail/Countdown'), // 倒计时
         },
-        {
-            path: '/more',
-            name: 'more',
-            component: () =>
-                import ( /* webpackChunkName: "more" */ '@/pages/projectSchedule/template/more/index'), //更多
-        },
+        // {
+        //     path: '/more',
+        //     name: 'more',
+        //     component: () =>
+        //         import ( /* webpackChunkName: "more" */ '@/pages/projectSchedule/template/more/index'), //更多
+        // },
         {
             path: '/test',
             name: 'test',
