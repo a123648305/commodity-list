@@ -9,12 +9,6 @@ export default new Router({
                 import ( /* webpackChunkName: "login" */ '@/pages/projectSchedule/template/login/index'), // 登录
         },
         {
-            path: '/plan',
-            name: 'plan',
-            component: () =>
-                import ( /* webpackChunkName: "plan" */ '@/pages/projectSchedule/template/plan/index'), // 项目规划
-        },
-        {
             path: '/recent',
             name: 'recent',
             component: () =>
